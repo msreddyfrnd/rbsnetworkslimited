@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Company</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>My IT Company</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1 class="fade-in">Reliable IT Solutions</h1>
+    <p class="fade-in">Secure, scalable IT services for your business</p>
+    <a href="#contact" class="btn">Contact Us</a>
+</section>
+
+<section class="about fade-in">
+    <h2>About Us</h2>
+    <p>We deliver enterprise-grade IT infrastructure, networking, and cloud solutions.</p>
+</section>
+
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="card fade-in">
+        <h3>Infrastructure</h3>
+        <p>End-to-end IT setup</p>
+    </div>
+
+    <div class="card fade-in">
+        <h3>Networking</h3>
+        <p>Secure network solutions</p>
+    </div>
+
+    <div class="card fade-in">
+        <h3>Cloud</h3>
+        <p>Cloud migration & support</p>
+    </div>
+
+    <div class="card fade-in">
+        <h3>Consulting</h3>
+        <p>Expert guidance</p>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+
+    <form action="contact.php" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 My IT Company</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
