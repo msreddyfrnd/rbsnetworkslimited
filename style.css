@@ -1,31 +1,135 @@
-/* MEGA MENU */
-nav {
-  display:flex;
-  gap:20px;
+/* RESET */
+body {
+    margin:0;
+    font-family:'Segoe UI', sans-serif;
 }
 
-/* BUTTON */
-.btn {
-  background:#004aad;
-  color:#fff;
-  padding:12px 20px;
-  border-radius:5px;
-}
-
-/* SECTION STYLE */
-section {
-  padding:80px 40px;
-}
-
-/* CLIENT LOGOS GRID */
-.clients img {
-  width:120px;
-  margin:20px;
-}
-
-/* HEADER FIX */
+/* HEADER */
 header {
-  position:fixed;
-  width:100%;
-  top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#0A2540;
+    color:white;
+}
+
+header nav a {
+    color:white;
+    margin-left:20px;
+    text-decoration:none;
+    font-weight:500;
+}
+
+header nav a:hover {
+    color:#1da1f2;
+}
+
+/* HERO */
+.hero {
+    height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background: linear-gradient(135deg,#004aad,#1da1f2);
+    color:white;
+    flex-direction:column;
+}
+
+.hero h1 {
+    font-size:42px;
+    margin-bottom:10px;
+}
+
+/* STATS */
+.stats {
+    display:flex;
+    justify-content:space-around;
+    padding:50px;
+    background:#f4f7fb;
+}
+
+.stats div {
+    text-align:center;
+}
+
+.stats h2 {
+    font-size:36px;
+    color:#004aad;
+}
+
+/* SERVICES */
+.services {
+    padding:60px 30px;
+    text-align:center;
+}
+
+.card {
+    display:inline-block;
+    width:240px;
+    margin:15px;
+    padding:20px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* CLIENTS */
+.clients {
+    padding:60px;
+    text-align:center;
+}
+
+.clients img {
+    width:120px;
+    margin:20px;
+    opacity:0.7;
+}
+
+.clients img:hover {
+    opacity:1;
+}
+
+/* CONTACT */
+form {
+    padding:40px;
+}
+
+input, textarea {
+    width:80%;
+    padding:10px;
+    margin:10px;
+    border:1px solid #ccc;
+}
+
+button {
+    background:#004aad;
+    color:white;
+    border:none;
+    padding:12px 20px;
+}
+
+/* FOOTER */
+footer {
+    background:#0A2540;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+    header {
+        flex-direction:column;
+    }
+
+    .stats {
+        flex-direction:column;
+    }
+
+    .card {
+        width:90%;
+    }
 }
