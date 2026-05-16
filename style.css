@@ -1,28 +1,27 @@
 body {
     margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    font-family:'Segoe UI';
 }
 
 header {
     display:flex;
     justify-content:space-between;
-    padding:20px;
+    padding:15px 30px;
     background:#0A2540;
     color:white;
 }
 
 header a {
     color:white;
-    margin:10px;
+    margin-left:15px;
     text-decoration:none;
 }
 
 .hero {
-    height:90vh;
     background: linear-gradient(135deg,#004aad,#1da1f2);
-    color:white;
     text-align:center;
-    padding-top:180px;
+    color:white;
+    padding:120px 20px;
 }
 
 .btn {
@@ -33,7 +32,7 @@ header a {
 }
 
 section {
-    padding:60px;
+    padding:60px 20px;
     text-align:center;
 }
 
@@ -47,7 +46,7 @@ section {
     margin:15px;
     padding:20px;
     background:white;
-    border-radius:12px;
+    border-radius:10px;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
     transition:0.3s;
 }
@@ -63,26 +62,14 @@ input, textarea {
 }
 
 button {
+    padding:10px 20px;
     background:#004aad;
     color:white;
     border:none;
-    padding:10px 20px;
 }
 
 footer {
     background:#0A2540;
     color:white;
     padding:20px;
-}
-
-/* animation */
-.fade-in {
-    opacity:0;
-    transform:translateY(30px);
-    transition:1s;
-}
-
-.fade-in.show {
-    opacity:1;
-    transform:translateY(0);
 }
