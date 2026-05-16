@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RBS Networks Limited</title>
 
 <link rel="stylesheet" href="style.css">
@@ -12,87 +11,74 @@
 <body>
 
 <!-- HEADER -->
-<header>
-    <h2>RBS Networks</h2>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<header id="header">
+  <h2>RBS Networks</h2>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#clients">Clients</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <!-- HERO -->
 <section class="hero">
+  <div class="slide active">
     <h1>Enterprise IT Solutions</h1>
-    <p>Reliable, scalable and secure technology services for your business</p>
-    <a href="#contact" class="btn">Get in Touch</a>
+    <p>Reliable, scalable & secure services</p>
+  </div>
+  <div class="slide">
+    <h1>Cloud & Networking Experts</h1>
+    <p>Modern infrastructure solutions</p>
+  </div>
 </section>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Us</h2>
-    <p>
-        RBS Networks Limited is a leading IT infrastructure and networking solutions provider.
-        We help organizations design, implement and manage secure, high-performance technology environments.
-    </p>
+<!-- COUNTERS -->
+<section class="stats">
+  <div><h2 class="count" data-target="150">0</h2><p>Projects</p></div>
+  <div><h2 class="count" data-target="80">0</h2><p>Clients</p></div>
+  <div><h2 class="count" data-target="20">0</h2><p>Years Experience</p></div>
 </section>
 
 <!-- SERVICES -->
 <section id="services" class="services">
-    <h2>Our Services</h2>
+  <h2>Our Services</h2>
 
-    <div class="card">
-        <h3>IT Infrastructure</h3>
-        <p>Complete setup and maintenance of IT systems</p>
-    </div>
-
-    <div class="card">
-        <h3>Networking</h3>
-        <p>High-performance secure network solutions</p>
-    </div>
-
-    <div class="card">
-        <h3>Cloud Services</h3>
-        <p>Cloud migration and management support</p>
-    </div>
-
-    <div class="card">
-        <h3>Security Solutions</h3>
-        <p>Protect your systems with advanced security</p>
-    </div>
-
+  <div class="card">Infrastructure Solutions</div>
+  <div class="card">Networking</div>
+  <div class="card">Cloud Services</div>
+  <div class="card">Cyber Security</div>
 </section>
 
-<!-- WHY US -->
-<section>
-    <h2>Why Choose Us</h2>
-    <ul>
-        <li>✔ Experienced team</li>
-        <li>✔ Reliable solutions</li>
-        <li>✔ Quick support</li>
-        <li>✔ Cost-effective services</li>
-    </ul>
+<!-- CLIENT LOGO CAROUSEL -->
+<section id="clients" class="clients">
+  <h2>Our Clients</h2>
+
+  <div class="carousel">
+    <img src="https://via.placeholder.com/120">
+    <img src="https://via.placeholder.com/120">
+    <img src="https://via.placeholder.com/120">
+    <img src="https://via.placeholder.com/120">
+  </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-    <h2>Contact Us</h2>
+  <h2>Contact Us</h2>
 
-    <form>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
-        <textarea placeholder="Message"></textarea>
-        <button>Send</button>
-    </form>
+  <form onsubmit="sendMail(event)">
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Message"></textarea>
+    <button>Send</button>
+  </form>
 
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>© 2026 RBS Networks Limited</p>
+  <p>© 2026 RBS Networks Limited</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
-``
