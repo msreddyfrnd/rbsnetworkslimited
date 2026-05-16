@@ -1,96 +1,31 @@
-body { margin:0; font-family:Arial; }
-
-/* HEADER */
-header {
+/* MEGA MENU */
+nav {
   display:flex;
-  justify-content:space-between;
-  padding:20px;
-  background:#0A2540;
+  gap:20px;
+}
+
+/* BUTTON */
+.btn {
+  background:#004aad;
   color:#fff;
+  padding:12px 20px;
+  border-radius:5px;
+}
+
+/* SECTION STYLE */
+section {
+  padding:80px 40px;
+}
+
+/* CLIENT LOGOS GRID */
+.clients img {
+  width:120px;
+  margin:20px;
+}
+
+/* HEADER FIX */
+header {
   position:fixed;
   width:100%;
   top:0;
-  z-index:1000;
-}
-
-/* HERO */
-.hero {
-  height:100vh;
-  padding-top:100px;
-  position:relative;
-}
-
-.slide {
-  position:absolute;
-  width:100%;
-  height:100%;
-  background:linear-gradient(#004aad,#1da1f2);
-  color:white;
-  text-align:center;
-  padding-top:150px;
-  opacity:0;
-  transition:1s;
-}
-
-.slide.active {
-  opacity:1;
-}
-
-/* STATS */
-.stats {
-  display:flex;
-  justify-content:space-around;
-  padding:40px;
-  background:#f4f4f4;
-}
-
-/* SERVICES */
-.services {
-  padding:60px;
-  text-align:center;
-}
-
-.card {
-  display:inline-block;
-  background:#fff;
-  margin:15px;
-  padding:20px;
-  width:200px;
-  box-shadow:0 5px 10px rgba(0,0,0,0.1);
-}
-
-/* CLIENTS */
-.carousel {
-  display:flex;
-  overflow:hidden;
-  gap:30px;
-  animation: scroll 10s linear infinite;
-}
-
-@keyframes scroll {
-  from {transform:translateX(0);}
-  to {transform:translateX(-50%);}
-}
-
-img {
-  width:100px;
-}
-
-/* CONTACT */
-input, textarea {
-  width:80%;
-  padding:10px;
-  margin:10px;
-}
-
-footer {
-  background:#0A2540;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-  .stats{flex-direction:column;}
 }
