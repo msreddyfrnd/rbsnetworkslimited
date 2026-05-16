@@ -25,9 +25,13 @@ counters.forEach(c=>{
 });
 
 // Sticky header shadow
-window.addEventListener("scroll",()=>{
-  document.getElementById("header").style.boxShadow=
-    window.scrollY>50 ? "0 2px 10px rgba(0,0,0,0.2)" : "none";
+window.addEventListener("scroll", function(){
+  let header = document.getElementById("header");
+  if(window.scrollY > 50){
+    header.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
+  } else {
+    header.style.boxShadow = "none";
+  }
 });
 
 // Fake form
