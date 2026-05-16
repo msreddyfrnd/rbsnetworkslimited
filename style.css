@@ -267,4 +267,12 @@ table th {
     .card {
         width: 90%;
     }
+    .contact-page {
+  padding:60px;
+  text-align:center;
+}
+
+.contact-page p {
+  margin:10px;
+}
 }
