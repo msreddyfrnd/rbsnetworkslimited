@@ -1,29 +1,29 @@
-/* RESET */
+/* ================= RESET ================= */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background: #e6ffe6;   /* ✅ LIGHT GREEN BACKGROUND */
 }
 
-/* ---------------- HEADER ---------------- */
+/* ================= HEADER ================= */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
 
-    background: #c0392b;   /* ✅ RED MENU BAR */
+    padding: 15px 50px;
+    background: #e74c3c;   /* ✅ RED MENU BAR */
     color: white;
 }
 
-/* ---------------- LOGO ---------------- */
+/* ================= LOGO ================= */
 .logo-section {
     display: flex;
     align-items: center;
 }
 
 .logo-img {
-    width: 60px;   /* ✅ Bigger logo (like maslink) */
+    width: 65px;   /* ✅ Slightly bigger (balanced like maslink) */
     height: auto;
     object-fit: contain;
     margin-right: 12px;
@@ -35,7 +35,7 @@ header {
     color: white;
 }
 
-/* ---------------- NAV ---------------- */
+/* ================= NAV ================= */
 nav a {
     color: white;
     text-decoration: none;
@@ -47,7 +47,7 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* ---------------- HERO ---------------- */
+/* ================= HERO ================= */
 .hero {
     background: #004aad;
     color: white;
@@ -55,13 +55,18 @@ nav a:hover {
     padding: 80px 20px;
 }
 
-/* ---------------- SERVICES ---------------- */
+/* ================= STATS ================= */
+.stats {
+    padding: 40px;
+}
+
+/* ================= SERVICES ================= */
 .services {
     padding: 50px;
     text-align: center;
 }
 
-/* ---------------- CARDS ---------------- */
+/* ================= CARDS ================= */
 .card {
     display: inline-block;
     width: 200px;
@@ -72,13 +77,13 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* ---------------- CLIENTS ---------------- */
+/* ================= CLIENTS ================= */
 .client-logos img {
     width: 100px;
     margin: 10px;
 }
 
-/* ---------------- CONTACT ---------------- */
+/* ================= CONTACT ================= */
 form {
     max-width: 400px;
     margin: auto;
@@ -90,15 +95,20 @@ input, textarea {
     margin: 8px 0;
 }
 
-/* ---------------- BUTTON ---------------- */
+/* ================= BUTTON ================= */
 button {
     padding: 10px;
-    background: #c0392b;   /* ✅ match red header */
+    background: #e74c3c;   /* ✅ match red header */
     color: white;
     border: none;
+    cursor: pointer;
 }
 
-/* ---------------- FOOTER ---------------- */
+button:hover {
+    background: #c0392b;
+}
+
+/* ================= FOOTER ================= */
 footer {
     background: #333;
     color: white;
