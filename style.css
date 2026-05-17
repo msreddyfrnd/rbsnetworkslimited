@@ -10,7 +10,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 12px 60px;
     background: #e74c3c;   /* ✅ RED MENU BAR */
     color: white;
 }
@@ -22,9 +22,9 @@ header {
 }
 
 .logo-img {
-    width: 65px;
+    width: 90px;
     height: auto;
-    margin-right: 12px;
+    margin-right: 15px;
 }
 
 .logo-text {
