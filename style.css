@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #e6ffe6;   /* ✅ LIGHT GREEN BACKGROUND */
+    background: #e6ffe6;   /* ✅ LIGHT GREEN */
 }
 
 /* ================= HEADER ================= */
@@ -10,7 +10,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 15px 50px;
     background: #e74c3c;   /* ✅ RED MENU BAR */
     color: white;
@@ -23,16 +22,14 @@ header {
 }
 
 .logo-img {
-    width: 65px;   /* ✅ Slightly bigger (balanced like maslink) */
+    width: 65px;
     height: auto;
-    object-fit: contain;
     margin-right: 12px;
 }
 
 .logo-text {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
-    color: white;
 }
 
 /* ================= NAV ================= */
@@ -55,15 +52,14 @@ nav a:hover {
     padding: 80px 20px;
 }
 
-/* ================= STATS ================= */
-.stats {
-    padding: 40px;
-}
-
-/* ================= SERVICES ================= */
+/* ================= SECTION ================= */
 .services {
     padding: 50px;
     text-align: center;
+}
+
+.stats {
+    padding: 40px;
 }
 
 /* ================= CARDS ================= */
@@ -72,8 +68,7 @@ nav a:hover {
     width: 200px;
     margin: 15px;
     padding: 20px;
-
-    background: #ffffff;
+    background: white;
     border-radius: 8px;
 }
 
@@ -95,13 +90,11 @@ input, textarea {
     margin: 8px 0;
 }
 
-/* ================= BUTTON ================= */
 button {
     padding: 10px;
-    background: #e74c3c;   /* ✅ match red header */
+    background: #e74c3c;
     color: white;
     border: none;
-    cursor: pointer;
 }
 
 button:hover {
