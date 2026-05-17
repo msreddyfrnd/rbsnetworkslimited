@@ -24,16 +24,17 @@ counters.forEach(c=>{
   update();
 });
 
-// Sticky header shadow
-window.addEventListener("scroll", function(){
-  let header = document.getElementById("header");
-  if(window.scrollY > 50){
-    header.style.boxShadow = "0 3px 10px rgba(0,0,0,0.2)";
-  } else {
-    header.style.boxShadow = "none";
-  }
-});
+const cards = document.querySelectorAll(".card");
 
+window.addEventListener("scroll", () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    if(top < window.innerHeight - 50){
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
 // Fake form
 function sendMail(e){
   e.preventDefault();
