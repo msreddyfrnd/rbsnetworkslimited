@@ -1,45 +1,55 @@
+/* BASIC RESET */
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: #F4F7FB;
+    font-family: Arial, sans-serif;
+    background: #ffffff;   /* ✅ clean white background */
 }
 
 /* HEADER */
 header {
     display: flex;
     justify-content: space-between;
-    padding: 15px 50px;
-    background: #c0392b; /* ✅ RED NAVBAR */
+    align-items: center;
+    padding: 15px 40px;
+
+    background: #0A2540;   /* ✅ old blue restored */
     color: white;
 }
 
+/* NAV */
 nav a {
     color: white;
     text-decoration: none;
     margin-left: 20px;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 /* HERO */
 .hero {
-    text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(135deg,#0A2540,#3AAFA9);
+    background: #004aad;   /* ✅ simple blue */
     color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* SERVICES */
+.services {
+    padding: 50px;
+    text-align: center;
 }
 
 /* CARDS */
-.services {
-    padding: 60px;
-    text-align: center;
-}
-
 .card {
     display: inline-block;
     width: 200px;
     margin: 15px;
     padding: 20px;
-    background: white;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+    background: #f4f4f4;
+    border-radius: 8px;
 }
 
 /* CLIENTS */
@@ -57,20 +67,21 @@ form {
 input, textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
+    margin: 8px 0;
 }
 
+/* BUTTON */
 button {
-    background: #c0392b;
-    color: white;
     padding: 10px;
+    background: #004aad;
+    color: white;
     border: none;
 }
 
 /* FOOTER */
 footer {
-    text-align: center;
-    background: #333;
+    background: #0A2540;
     color: white;
+    text-align: center;
     padding: 20px;
 }
