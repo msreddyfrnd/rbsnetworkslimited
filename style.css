@@ -1,104 +1,84 @@
-/* HEADER */
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #e6ffe6;   /* ✅ LIGHT GREEN BACKGROUND */
+}
+
+/* ---------------- HEADER ---------------- */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
-    background: #0A2540;
+    padding: 15px 50px;
+
+    background: #c0392b;   /* ✅ RED MENU BAR */
     color: white;
 }
 
-/* LOGO SECTION */
+/* ---------------- LOGO ---------------- */
 .logo-section {
     display: flex;
     align-items: center;
 }
 
-/* LOGO IMAGE (FIXED SIZE ✅) */
 .logo-img {
-    width: 35px;   /* ✅ small like maslinkinfo */
+    width: 60px;   /* ✅ Bigger logo (like maslink) */
     height: auto;
-    margin-right: 10px;
+    object-fit: contain;
+    margin-right: 12px;
 }
 
-/* LOGO TEXT */
 .logo-text {
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     color: white;
 }
 
-/* NAV */
+/* ---------------- NAV ---------------- */
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-/* BASIC RESET */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #ffffff;   /* ✅ clean white background */
-}
-
-/* HEADER */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-
-    background: #0A2540;   /* ✅ old blue restored */
-    color: white;
-}
-
-/* NAV */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
+    margin-left: 25px;
+    font-size: 16px;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-/* HERO */
+/* ---------------- HERO ---------------- */
 .hero {
-    background: #004aad;   /* ✅ simple blue */
+    background: #004aad;
     color: white;
     text-align: center;
     padding: 80px 20px;
 }
 
-/* SERVICES */
+/* ---------------- SERVICES ---------------- */
 .services {
     padding: 50px;
     text-align: center;
 }
 
-/* CARDS */
+/* ---------------- CARDS ---------------- */
 .card {
     display: inline-block;
     width: 200px;
     margin: 15px;
     padding: 20px;
 
-    background: #f4f4f4;
+    background: #ffffff;
     border-radius: 8px;
 }
 
-/* CLIENTS */
+/* ---------------- CLIENTS ---------------- */
 .client-logos img {
     width: 100px;
     margin: 10px;
 }
 
-/* CONTACT */
+/* ---------------- CONTACT ---------------- */
 form {
     max-width: 400px;
     margin: auto;
@@ -110,17 +90,17 @@ input, textarea {
     margin: 8px 0;
 }
 
-/* BUTTON */
+/* ---------------- BUTTON ---------------- */
 button {
     padding: 10px;
-    background: #004aad;
+    background: #c0392b;   /* ✅ match red header */
     color: white;
     border: none;
 }
 
-/* FOOTER */
+/* ---------------- FOOTER ---------------- */
 footer {
-    background: #0A2540;
+    background: #333;
     color: white;
     text-align: center;
     padding: 20px;
