@@ -46,7 +46,7 @@ nav a:hover {
 
 /* ================= HERO ================= */
 .hero {
-    background: #ffffff;
+    background: #ffffff !important;   /* ✅ white clean */
     color: black;
     text-align: center;
     padding: 80px 20px;
