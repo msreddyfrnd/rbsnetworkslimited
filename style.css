@@ -26,7 +26,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 15px 20px;
 }
 
 /* ================= LOGO ================= */
@@ -87,7 +87,7 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 .btn {
     display: inline-block;
     background: black;
@@ -120,53 +120,53 @@ nav a:hover {
     text-align: center;
 }
 
-/* ================= SERVICES ================= */
+/* ================= SERVICES (FINAL FIXED) ================= */
 .services {
     background: #4b93af;
-    padding: 60px 0;
+    padding: 60px 20px;
+    text-align: center;
+
+    /* ✅ Important: make cards align properly */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
 }
 
 /* Title */
-.services-title {
-    text-align: center;
+.services h2 {
+    width: 100%;
     font-size: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-weight: bold;
 }
 
-/* Grid layout */
-.services-grid {
+/* ✅ CARD STYLE */
+.card {
+    width: 280px;
+    height: 180px;
+    background: white;
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
 }
 
-/* Each box */
-.service-box {
-    flex: 1;
-    min-width: 280px;
+/* ✅ Hover */
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* ✅ LINK INSIDE CARD */
+.card a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
     text-align: center;
-}
-
-/* Headings */
-.service-box h2 {
-    font-size: 26px;
-    margin-bottom: 20px;
-}
-
-/* Images */
-.service-box img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-/* Text */
-.service-box p {
-    font-size: 15px;
-    line-height: 1.6;
+    padding: 10px;
 }
 
 /* ================= FOOTER ================= */
@@ -175,4 +175,11 @@ footer {
     padding: 20px;
     background: #222;
     color: white;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
 }
