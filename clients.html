@@ -3,6 +3,41 @@
 <head>
 <title>Clients - RBS Networks</title>
 <link rel="stylesheet" href="style.css">
+
+<style>
+/* Simple styling for better layout */
+.clients {
+    text-align: center;
+    padding: 40px;
+}
+
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.client-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.client-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.client-card p {
+    font-weight: bold;
+    font-size: 14px;
+}
+</style>
+
 </head>
 
 <body>
@@ -24,12 +59,43 @@
 <section class="clients">
   <h1>Our Clients</h1>
 
-  <div class="client-logos">
-    <img src="https://via.placeholder.com/120">
-    <img src="https://via.placeholder.com/120">
-    <img src="https://via.placeholder.com/120">
-    <img src="https://via.placeholder.com/120">
-    <img src="https://via.placeholder.com/120">
+  <div class="client-list">
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Zoomcars">
+      <p>Zoomcars India Private Limited</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="BMRCL">
+      <p>Bangalore Metro Rail Project (BMRCL)</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Mantri Square">
+      <p>Mantri Square</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Nexus Whitefield">
+      <p>Nexus Whitefield</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Prestige Rex Walk">
+      <p>Prestige Rex Walk</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Godrej Centurian">
+      <p>Godrej Centurian</p>
+    </div>
+
+    <div class="client-card">
+      <img src="https://via.placeholder.com/120" alt="Jockey">
+      <p>Jockey</p>
+    </div>
+
   </div>
 
 </section>
