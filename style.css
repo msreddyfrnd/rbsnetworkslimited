@@ -27,17 +27,17 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 0;
-    color: white;
 }
 
 /* ================= LOGO ================= */
 .logo-section {
     display: flex;
     align-items: center;
+    color: white;
 }
 
 .logo-img {
-    width: 50px;
+    width: 60px;
     margin-right: 10px;
 }
 
@@ -52,6 +52,7 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
     font-size: 15px;
+    padding-bottom: 4px;
 }
 
 nav a:hover {
@@ -74,16 +75,16 @@ nav a:hover {
 }
 
 .hero p {
-    font-size: 18px;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
-/* Button */
+/* BUTTON */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background: #000;
+    background: black;
     color: white;
+    padding: 10px 22px;
     border-radius: 20px;
     text-decoration: none;
 }
@@ -95,15 +96,16 @@ nav a:hover {
 
 .section-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 40px;
 }
 
-/* ✅ FIXED STATS ALIGNMENT */
+/* ✅ FIXED ALIGNMENT */
 .stats {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 40px;
+    flex-wrap: wrap;
 }
 
 .stat-box {
