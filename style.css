@@ -1,8 +1,14 @@
 /* ================= RESET ================= */
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background: #e6ffe6;   /* ✅ LIGHT GREEN */
+    background: #e6ffe6;  /* Light green */
+    line-height: 1.6;
 }
 
 /* ================= HEADER ================= */
@@ -10,9 +16,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 60px;
-    background: #e74c3c;   /* ✅ RED MENU BAR */
+    padding: 15px 60px;
+    background: #e74c3c;  /* Red */
     color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 /* ================= LOGO ================= */
@@ -22,14 +29,15 @@ header {
 }
 
 .logo-img {
-    width: 90px;
+    width: 80px;
     height: auto;
-    margin-right: 15px;
+    margin-right: 12px;
 }
 
 .logo-text {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 /* ================= NAV ================= */
@@ -38,73 +46,5 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
     font-size: 16px;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ================= HERO ================= */
-.hero {
-    background: #ffffff !important;   /* ✅ white clean */
-    color: black;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-/* ================= SECTION ================= */
-.services {
-    padding: 50px;
-    text-align: center;
-}
-
-.stats {
-    padding: 40px;
-}
-
-/* ================= CARDS ================= */
-.card {
-    display: inline-block;
-    width: 200px;
-    margin: 15px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
-}
-
-/* ================= CLIENTS ================= */
-.client-logos img {
-    width: 100px;
-    margin: 10px;
-}
-
-/* ================= CONTACT ================= */
-form {
-    max-width: 400px;
-    margin: auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-}
-
-button {
-    padding: 10px;
-    background: #e74c3c;
-    color: white;
-    border: none;
-}
-
-button:hover {
-    background: #c0392b;
-}
-
-/* ================= FOOTER ================= */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    transition: 0.3s;
 }
