@@ -26,6 +26,12 @@ header {
     top: 0;
     z-index: 1000;
 }
+.header-inner {
+    display: flex;
+    justify-content: space-between; /* ✅ pushes nav right */
+    align-items: center;
+    padding: 15px 30px;
+}
 
 .logo-section {
     display: flex;
