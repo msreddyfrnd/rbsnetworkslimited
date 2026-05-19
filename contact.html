@@ -20,13 +20,6 @@
 
 .contact-details {
     margin-top: 20px;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-.contact-details b {
-    display: inline-block;
-    width: 90px;
 }
 
 form {
@@ -44,9 +37,8 @@ form input, form textarea {
 form button {
     background-color: #4aa3c0;
     color: white;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -59,67 +51,43 @@ form button:hover {
 
 <body>
 
-<header>
-  <div class="logo">RBS Networks</div>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
-    <a href="clients.html">Clients</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
 <section class="contact-page">
-
   <h1>CONTACT US</h1>
 
-  <div class="contact-details">
-    <p><b>Address:</b></p>
-    <p>
-      RBS NETWORK SOLUTIONS<br>
-      NO S1 GF, Shaheena Building<br>
-      Kalpana Chawla Road, Boopasandra<br>
-      Bangalore - 560094
-    </p>
-
-    <p><b>WhatsApp:</b> 7892554609, 9353961667</p>
-    <p><b>E-Mail:</b> <a href="mailto:rbsnetworks2025@gmail.com">rbsnetworks2025@gmail.com</a></p>
-  </div>
-
   <form id="contact-form">
-  <input type="text" name="user_name" placeholder="Your Name" required>
-  <input type="email" name="user_email" placeholder="Your Email" required>
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit">Send Message</button>
-</form>
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
-<!-- EmailJS Script -->
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<!-- ✅ EmailJS latest SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
-(function() {
-  emailjs.init("YOUR_PUBLIC_KEY"); // replace this
+(function(){
+  emailjs.init("YOUR_PUBLIC_KEY");  // 🔴 Replace this
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
   e.preventDefault();
 
-  emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-    .then(function() {
-      alert("✅ Message sent successfully!");
-    }, function(error) {
-      alert("❌ Failed to send message.");
-    });
+  emailjs.sendForm(
+    "service_qchh8fa",        // ✅ Your Service ID
+    "YOUR_TEMPLATE_ID",       // 🔴 Replace this
+    this
+  )
+  .then(function() {
+    alert("✅ Message sent successfully!");
+  }, function(error) {
+    alert("❌ Failed: " + JSON.stringify(error));
+    console.log(error);
+  });
 
   this.reset();
 });
 </script>
-
-</section>
-
-<footer>
-  <p>© 2025 RBS Networks</p>
-</footer>
 
 </body>
 </html>
