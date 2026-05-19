@@ -62,7 +62,6 @@ nav a {
     text-decoration: none;
     margin-left: 25px;
     font-size: 15px;
-    position: relative;
     transition: 0.3s;
 }
 
@@ -80,26 +79,20 @@ nav a:hover {
     justify-content: center;
 }
 
-/* ✅ FIXED overlay */
 .hero::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: rgba(0,0,0,0.5);
-
-    pointer-events: none;   /* ✅ CRITICAL FIX */
+    pointer-events: none;
 }
 
-/* ✅ keep content above overlay */
 .hero-inner {
     position: relative;
     text-align: center;
     color: white;
     max-width: 700px;
-    z-index: 2;   /* ✅ IMPORTANT */
+    z-index: 2;
 }
 
 .hero h1 {
@@ -126,7 +119,7 @@ nav a:hover {
     background: #357a91;
 }
 
-/* ================= SECTION ================= */
+/* ================= GENERAL SECTION ================= */
 .section {
     padding: 70px 0;
     text-align: center;
@@ -137,7 +130,79 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/* ================= STATS ================= */
+/* ================= SERVICES (IMPROVED) ================= */
+.services {
+    position: relative;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+
+    background: url('https://images.unsplash.com/photo-1537432376769-00a722799c29') no-repeat center/cover;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: start;
+    gap: 40px;
+}
+
+/* Overlay */
+.services::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+    pointer-events: none;
+}
+
+/* Title */
+.services h2 {
+    grid-column: 1 / -1;
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+/* ================= CARD ================= */
+.card {
+    position: relative;
+    z-index: 2;
+
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    transition: 0.4s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.03);
+}
+
+/* Card image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Card text */
+.card a {
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #4b93af;
+}
+
+/* ================= OTHER SECTIONS ================= */
 .stats {
     display: flex;
     justify-content: center;
@@ -157,48 +222,6 @@ nav a:hover {
     font-size: 28px;
 }
 
-/* ================= SERVICES ================= */
-.services {
-    background: #4b93af;
-    padding: 70px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 40px;
-    text-align: center;
-}
-
-.services h2 {
-    width: 100%;
-    font-size: 36px;
-    color: white;
-    margin-bottom: 40px;
-}
-
-/* Service Cards */
-.card {
-    width: 280px;
-    height: 180px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.card a {
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-}
-
 /* ================= ABOUT ================= */
 .about-company {
     padding: 60px 0;
@@ -210,7 +233,6 @@ nav a:hover {
     margin-bottom: 40px;
 }
 
-/* About blocks */
 .about-block {
     background: white;
     padding: 30px;
@@ -220,28 +242,6 @@ nav a:hover {
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.about-block h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    border-left: 5px solid #4b93af;
-    padding-left: 10px;
-}
-
-.about-block p,
-.about-block li {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.7;
-}
-
-.about-block ul {
-    padding-left: 20px;
-}
-
-.about-block strong {
-    color: #000;
 }
 
 /* ================= FOOTER ================= */
@@ -254,16 +254,11 @@ footer {
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-
     .hero h1 {
         font-size: 32px;
     }
 
-    .card {
-        width: 90%;
-    }
-
     nav {
-        display: none; /* simple fallback */
+        display: none;
     }
 }
