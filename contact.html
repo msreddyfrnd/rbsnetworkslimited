@@ -6,44 +6,52 @@
 
 <style>
 .contact-page {
-    padding: 40px;
-    max-width: 800px;
-    margin: auto;
+ padding: 40px;
+ max-width: 800px;
+ margin: auto;
 }
 
 .contact-page h1 {
-    background-color: #4aa3c0;
-    color: white;
-    padding: 10px;
-    text-align: center;
+ background-color: #4aa3c0;
+ color: white;
+ padding: 10px;
+ text-align: center;
 }
 
 .contact-details {
-    margin-top: 20px;
+ margin-top: 20px;
+ font-size: 16px;
+ line-height: 1.6;
+}
+
+.contact-details b {
+ display: inline-block;
+ width: 90px;
 }
 
 form {
-    margin-top: 30px;
+ margin-top: 30px;
 }
 
 form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 8px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+ width: 100%;
+ padding: 10px;
+ margin: 8px 0;
+ border: 1px solid #ccc;
+ border-radius: 5px;
 }
 
 form button {
-    background-color: #4aa3c0;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
+ background-color: #4aa3c0;
+ color: white;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
 }
 
 form button:hover {
-    background-color: #3a8fa8;
+ background-color: #3a8fa8;
 }
 </style>
 
@@ -51,41 +59,76 @@ form button:hover {
 
 <body>
 
-<section class="contact-page">
-  <h1>CONTACT US</h1>
+<header>
+ <div class="logo">RBS Networks</div>
+ <nav>
+   <a href="index.html">Home</a>
+   <a href="services.html">Services</a>
+   <a href="clients.html">Clients</a>
+   <a href="contact.html">Contact</a>
+ </nav>
+</header>
 
-  <form id="contact-form">
-    <input type="text" name="user_name" placeholder="Your Name" required>
-    <input type="email" name="user_email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+<section class="contact-page">
+
+ <h1>CONTACT US</h1>
+
+ <div class="contact-details">
+   <p><b>Address:</b></p>
+   <p>
+   RBS NETWORK SOLUTIONS<br>
+   NO S1 GF, Shaheena Building<br>
+   Kalpana Chawla Road, Boopasandra<br>
+   Bangalore - 560094
+   </p>
+
+   <p><b>WhatsApp:</b> 7892554609, 9353961667</p>
+   <p><b>E-Mail:</b> 
+     <a href="mailto:rbsnetworks2025@gmail.com">
+       rbsnetworks2025@gmail.com
+     </a>
+   </p>
+ </div>
+
+ <!-- ✅ CONTACT FORM -->
+ <form id="contact-form">
+   <input type="text" name="user_name" placeholder="Your Name" required>
+   <input type="email" name="user_email" placeholder="Your Email" required>
+   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+   <button type="submit">Send Message</button>
+ </form>
+
 </section>
 
-<!-- ✅ EmailJS latest SDK -->
+<footer>
+ <p>© 2025 RBS Networks</p>
+</footer>
+
+<!-- ✅ CORRECT EmailJS (IMPORTANT CHANGE) -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
 (function(){
-  emailjs.init("riy_HNT0u1AZG6RW_");  // 🔴 Replace this
+  emailjs.init("riy_HNT0u1AZG6RW_"); // ✅ Replace this
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+ e.preventDefault();
 
-  emailjs.sendForm(
-    "service_qchh8fa",        // ✅ Your Service ID
-    "template_o45g477",       // 🔴 Replace this
-    this
-  )
-  .then(function() {
-    alert("✅ Message sent successfully!");
-  }, function(error) {
-    alert("❌ Failed: " + JSON.stringify(error));
-    console.log(error);
-  });
+ emailjs.sendForm(
+   "service_qchh8fa",     // ✅ Your actual service ID
+   "template_o45g477",    // ✅ Replace this
+   this
+ )
+ .then(function() {
+   alert("✅ Message sent successfully!");
+ })
+ .catch(function(error) {
+   alert("❌ Error: " + error.text);
+   console.log(error);
+ });
 
-  this.reset();
+ this.reset();
 });
 </script>
 
