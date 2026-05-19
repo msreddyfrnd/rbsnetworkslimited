@@ -20,16 +20,15 @@ body {
 
 /* ================= HEADER ================= */
 header {
-    background: #4aa3c0;  /* ✅ CHANGED to light blue */
-    border-bottom: none;  /* optional: cleaner look */
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
-
 .header-inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* ✅ pushes nav right */
     align-items: center;
     padding: 15px 30px;
 }
@@ -47,7 +46,7 @@ header {
 .logo-text {
     font-size: 22px;
     font-weight: bold;
-    color: #ffffff;  /* ✅ changed to white for contrast */
+    color: #000;
 }
 
 /* ================= NAV ================= */
@@ -57,15 +56,15 @@ nav {
 }
 
 nav a {
-    color: #ffffff;   /* ✅ changed to white */
+    color: #333;
     text-decoration: none;
     margin-left: 25px;
-    font-size: 15px;  /* ✅ unchanged */
+    font-size: 15px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    color: #e0f7ff;   /* ✅ light hover effect */
+    color: #4b93af;
 }
 
 /* ================= HERO ================= */
@@ -118,18 +117,22 @@ nav a:hover {
     background: #357a91;
 }
 
-/* ================= SERVICES ================= */
+/* ================= SERVICES (FINAL PROFESSIONAL) ================= */
 .services {
     position: relative;
     padding: 80px 40px;
     text-align: center;
     color: #fff;
+
+    /* ✅ Clean IT-company gradient */
     background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 40px;
 }
 
+/* ✅ Light overlay */
 .services::before {
     content: "";
     position: absolute;
@@ -138,6 +141,7 @@ nav a:hover {
     pointer-events: none;
 }
 
+/* Title */
 .services h2 {
     grid-column: 1 / -1;
     font-size: 42px;
@@ -157,6 +161,8 @@ nav a:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     text-align: center;
     transition: 0.3s;
+
+    /* ✅ Premium glass effect */
     backdrop-filter: blur(6px);
 }
 
@@ -164,6 +170,7 @@ nav a:hover {
     transform: translateY(-10px);
 }
 
+/* Image */
 .card img {
     width: 100%;
     height: 190px;
@@ -171,6 +178,7 @@ nav a:hover {
     border-radius: 10px;
 }
 
+/* Title */
 .card a {
     display: block;
     font-size: 20px;
