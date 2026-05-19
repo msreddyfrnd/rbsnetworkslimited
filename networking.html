@@ -6,48 +6,147 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Networking Services - RBS Networks</title>
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ✅ HEADER FIX */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 40px;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    /* ✅ PUSH MENU TO RIGHT */
+    nav {
+      margin-left: auto;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    /* ✅ SERVICE SECTIONS */
+    .service-section {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-section:nth-of-type(even) {
+      background: #f1f5f9;
+    }
+
+    .service-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .service-text h1,
+    .service-text h2 {
+      color: #1e293b;
+      margin-bottom: 15px;
+      font-size: 30px;
+    }
+
+    .service-text p {
+      color: #555;
+      line-height: 1.7;
+    }
+
+    .service-img {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .service-img img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 
 <body>
-  <header>
+
+<!-- ✅ HEADER -->
+<header>
   <div class="logo-section">
-      <img src="rbs_logo.jpg" class="logo-img">
-      <span class="logo-text">RBS Networks</span>
+    <img src="rbs_logo.jpg" class="logo-img">
+    <span class="logo-text">RBS Networks</span>
   </div>
 
+  <!-- ✅ RIGHT SIDED MENU -->
   <nav>
     <a href="index.html">Home</a>
-    <a href="services.html">Services</a>
     <a href="clients.html">Clients</a>
     <a href="contact.html">Contact</a>
+    <a href="services.html">Back</a>
   </nav>
 </header>
 
-<!-- HERO -->
-<section class="services">
-  <h1>Network Infrastructure</h1>
-  <p>
-    We specialize in the design, installation, and management of Fibre to the Home (FTTH) and structured cabling solutions. 
-    Our services include professional cabling systems for data, voice, and video, with both primary and backup support. 
-    We provide end-to-end infrastructure solutions, from server setups to workstation connectivity, for IT parks, universities, colleges, hotels, resorts, malls, retail spaces, co-living facilities, and healthcare centers
-  </p>
-</section>
-<section class="services">
-<h2>Managed Services</h2>
-<p>
-  RBS Network specializes in the design, installation, and configuration of robust, scalable wired and wireless network solutions.
-  Our services include the deployment of advanced access points, ISP integration, and fully managed and monitored network environments.
-  We focus on delivering high-performance networks tailored for high-density environments, ensuring enhanced operational control and seamless integration with existing systems and infrastructure.
-</p>
+<!-- ✅ 1. NETWORK INFRASTRUCTURE -->
+<section class="service-section">
+  <div class="service-text">
+    <h1>Network Infrastructure</h1>
+    <p>
+      We specialize in the design, installation, and management of Fibre to the Home (FTTH) 
+      and structured cabling solutions. We deliver complete infrastructure including data, 
+      voice, and video systems with scalable and reliable connectivity solutions.
+    </p>
+  </div>
+
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=60">
+  </div>
 </section>
 
-<!-- CHALLENGES -->
-<section class="services">
+<!-- ✅ 2. MANAGED SERVICES -->
+<section class="service-section">
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=60">
+  </div>
 
-<h2>IT Support</h2>
-<p>
-  We provide comprehensive helpdesk and managed IT services to support hardware, software, and network-related issues. 
-  Our solutions are designed to ensure efficient problem resolution, minimize downtime, and maintain optimal system performance across your IT environment
-</p>
-
+  <div class="service-text">
+    <h2>Managed Services</h2>
+    <p>
+      We design and deploy advanced wired and wireless network environments with 
+      enterprise-grade access points, ISP integration, and centralized monitoring.
+    </p>
+  </div>
 </section>
+
+<!-- ✅ 3. IT SUPPORT -->
+<section class="service-section">
+  <div class="service-text">
+    <h2>IT Support</h2>
+    <p>
+      Our team provides complete helpdesk and managed IT services covering hardware, 
+      software, and networking challenges.
+    </p>
+  </div>
+
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=60">
+  </div>
+</section>
+
+<!-- ✅ FOOTER -->
+<footer>
+  <p>© 2025 RBS Networks</p>
+</footer>
+
+</body>
+</html>
