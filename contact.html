@@ -5,6 +5,43 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ✅ HEADER FIX */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4aa3c0;
+  padding: 10px 30px;
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ✅ MENU RIGHT ALIGN */
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE */
 .contact-page {
  padding: 40px;
  max-width: 800px;
@@ -53,6 +90,11 @@ form button {
 form button:hover {
  background-color: #3a8fa8;
 }
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
 </style>
 
 </head>
@@ -61,6 +103,8 @@ form button:hover {
 
 <header>
  <div class="logo">RBS Networks</div>
+
+ <!-- ✅ RIGHT SIDE MENU -->
  <nav>
    <a href="index.html">Home</a>
    <a href="services.html">Services</a>
@@ -104,20 +148,20 @@ form button:hover {
  <p>© 2025 RBS Networks</p>
 </footer>
 
-<!-- ✅ CORRECT EmailJS (IMPORTANT CHANGE) -->
+<!-- ✅ EmailJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
 (function(){
-  emailjs.init("riy_HNT0u1AZG6RW_"); // ✅ Replace this
+  emailjs.init("riy_HNT0u1AZG6RW_");
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
  e.preventDefault();
 
  emailjs.sendForm(
-   "service_qchh8fa",     // ✅ Your actual service ID
-   "template_o45g477",    // ✅ Replace this
+   "service_qchh8fa",
+   "template_o45g477",
    this
  )
  .then(function() {
