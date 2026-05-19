@@ -80,6 +80,7 @@ nav a:hover {
     justify-content: center;
 }
 
+/* ✅ FIXED overlay */
 .hero::after {
     content: "";
     position: absolute;
@@ -88,13 +89,17 @@ nav a:hover {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,0.5);
+
+    pointer-events: none;   /* ✅ CRITICAL FIX */
 }
 
+/* ✅ keep content above overlay */
 .hero-inner {
     position: relative;
     text-align: center;
     color: white;
     max-width: 700px;
+    z-index: 2;   /* ✅ IMPORTANT */
 }
 
 .hero h1 {
