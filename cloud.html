@@ -9,11 +9,12 @@
 
 <style>
 
-/* ✅ HEADER FIX */
+/* ✅ HEADER FIX + LIGHT BLUE */
 header {
     display: flex;
     align-items: center;
     padding: 15px 40px;
+    background-color: #87CEFA; /* Light Blue */
 }
 
 .logo-section {
@@ -29,18 +30,19 @@ nav {
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #333;
+    color: #000;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #2563eb;
+    color: #1d4ed8;
 }
 
 /* ✅ SECTION DESIGN */
 .service-section {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
     padding: 60px 40px;
     flex-wrap: wrap;
@@ -51,10 +53,11 @@ nav a:hover {
     background: #f1f5f9;
 }
 
-/* Text */
+/* ✅ Text alignment improved */
 .service-text {
     flex: 1;
     min-width: 300px;
+    max-width: 600px;
 }
 
 .service-text h1,
@@ -62,23 +65,35 @@ nav a:hover {
     color: #1e293b;
     margin-bottom: 15px;
     font-size: 30px;
+    text-align: left;
 }
 
 .service-text p {
     color: #555;
     line-height: 1.7;
+    text-align: left;
 }
 
-/* Image */
+/* ✅ Image fix */
 .service-img {
     flex: 1;
     min-width: 300px;
+    max-width: 600px;
+    text-align: center;
 }
 
 .service-img img {
     width: 100%;
+    height: 300px; /* equal size */
+    object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+/* ✅ FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
 }
 
 </style>
