@@ -1,50 +1,106 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Clients - RBS Networks</title>
 <link rel="stylesheet" href="style.css">
 
 <style>
-/* Simple styling for better layout */
-.clients {
-    text-align: center;
-    padding: 40px;
+
+/* ✅ HEADER (MATCH OTHER PAGES) */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #87CEFA;
 }
 
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    margin-left: auto;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #1d4ed8;
+}
+
+/* ✅ CLIENT SECTION */
+.clients {
+    text-align: center;
+    padding: 50px;
+}
+
+.clients h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ✅ GRID */
 .client-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
     margin-top: 30px;
 }
 
+/* ✅ CARD DESIGN */
 .client-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
+.client-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ✅ IMAGE FIX */
 .client-card img {
     width: 120px;
     height: 120px;
     object-fit: contain;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
+/* ✅ TEXT */
 .client-card p {
     font-weight: bold;
     font-size: 14px;
+    color: #333;
 }
+
+/* ✅ FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #000;
+    color: #fff;
+}
+
 </style>
 
 </head>
 
 <body>
 
+<!-- ✅ HEADER -->
 <header>
   <div class="logo-section">
-      <img src="rbs_logo.jpg" class="logo-img">
+      _logo.jpg" class="logo-img">
       <span class="logo-text">RBS Networks</span>
   </div>
 
@@ -56,43 +112,44 @@
   </nav>
 </header>
 
+<!-- ✅ CLIENTS -->
 <section class="clients">
   <h1>Our Clients</h1>
 
   <div class="client-list">
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Zoomcars">
+      .clearbit.com/zoomcar.com">
       <p>Zoomcars India Private Limited</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="BMRCL">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Namma_Metro_Logo.svg/120px-Namma_Metro_Logo.svg.png">
       <p>Bangalore Metro Rail Project (BMRCL)</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Mantri Square">
+      <img src="https://via.placeholder.com/120?text=Mantri">
       <p>Mantri Square</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Nexus Whitefield">
+      <img src="https://via.placeholder.com/120?text=Nexus">
       <p>Nexus Whitefield</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Prestige Rex Walk">
+      <img src="https://via.placeholder.com/120?text=Prestige">
       <p>Prestige Rex Walk</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Godrej Centurian">
+      <img src="https://via.placeholder.com/120?text=Godrej">
       <p>Godrej Centurian</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120" alt="Jockey">
+      <img src="https://logo.clearbit.com/jockeyindia.com">
       <p>Jockey</p>
     </div>
 
@@ -100,8 +157,9 @@
 
 </section>
 
+<!-- ✅ FOOTER -->
 <footer>
-  <p>© 2025 RBS Networks</p>
+  <p>© 2026 RBS Networks</p>
 </footer>
 
 </body>
