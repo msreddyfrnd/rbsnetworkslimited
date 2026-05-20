@@ -3,16 +3,16 @@
 
 <head>
 <title>Clients - RBS Networks</title>
-<link rel="stylesheet" href="style.css">
 
 <style>
 
-/* ✅ HEADER (MATCH OTHER PAGES) */
-header {
+/* ✅ HEADER SAME AS OTHER PAGES */
+.header-inner {
     display: flex;
     align-items: center;
-    padding: 15px 40px;
+    justify-content: space-between;
     background-color: #87CEFA;
+    padding: 15px 40px;
 }
 
 .logo-section {
@@ -20,16 +20,22 @@ header {
     align-items: center;
 }
 
-nav {
-    margin-left: auto;
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
 }
 
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ✅ MENU */
 nav a {
     margin-left: 25px;
     text-decoration: none;
     color: #000;
     font-weight: 500;
-    transition: 0.3s;
 }
 
 nav a:hover {
@@ -44,7 +50,6 @@ nav a:hover {
 
 .clients h1 {
     font-size: 32px;
-    margin-bottom: 20px;
 }
 
 /* ✅ GRID */
@@ -55,7 +60,7 @@ nav a:hover {
     margin-top: 30px;
 }
 
-/* ✅ CARD DESIGN */
+/* ✅ CARD */
 .client-card {
     padding: 20px;
     border-radius: 12px;
@@ -65,22 +70,24 @@ nav a:hover {
 }
 
 .client-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
 }
 
-/* ✅ IMAGE FIX */
+/* ✅ IMAGE */
 .client-card img {
     width: 120px;
     height: 120px;
     object-fit: contain;
     margin-bottom: 15px;
+    background: #f1f5f9;
+    padding: 10px;
+    border-radius: 8px;
 }
 
 /* ✅ TEXT */
 .client-card p {
     font-weight: bold;
     font-size: 14px;
-    color: #333;
 }
 
 /* ✅ FOOTER */
@@ -98,19 +105,20 @@ footer {
 <body>
 
 <!-- ✅ HEADER -->
-<header>
-  <div class="container header-inner">
-    <div class="logo-section">
-     <img src="rbs_logo.jpg" class="logo-img">
-        <span class="logo-text">RBS Networks Solutions</span>
-    </div>
+<header class="header-inner">
+
+  <div class="logo-section">
+    <img src="rbs_logo.jpg" class="logo-img" alt="Logo">
+    <span class="logo-text">RBS Networks Solutions</span>
+  </div>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="services.html">Services</a>
     <a href="clients.html">Clients</a>
     <a href="contact.html">Contact</a>
   </nav>
-  </div>
+
 </header>
 
 <!-- ✅ CLIENTS -->
@@ -120,37 +128,37 @@ footer {
   <div class="client-list">
 
     <div class="client-card">
-      .clearbit.com/zoomcar.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zoomcar_logo.png/240px-Zoomcar_logo.png" alt="Zoomcar">
       <p>Zoomcars India Private Limited</p>
     </div>
 
     <div class="client-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Namma_Metro_Logo.svg/120px-Namma_Metro_Logo.svg.png">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Namma_Metro_Logo.svg/200px-Namma_Metro_Logo.svg.png" alt="BMRCL">
       <p>Bangalore Metro Rail Project (BMRCL)</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Mantri">
+      <img src="https://via.placeholder.com/120?text=Mantri" alt="Mantri">
       <p>Mantri Square</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Nexus">
+      <img src="https://via.placeholder.com/120?text=Nexus" alt="Nexus">
       <p>Nexus Whitefield</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Prestige">
+      <img src="https://via.placeholder.com/120?text=Prestige" alt="Prestige">
       <p>Prestige Rex Walk</p>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Godrej">
+      <img src="https://via.placeholder.com/120?text=Godrej" alt="Godrej">
       <p>Godrej Centurian</p>
     </div>
 
     <div class="client-card">
-      <img src="https://logo.clearbit.com/jockeyindia.com">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jockey_logo.svg/200px-Jockey_logo.svg.png" alt="Jockey">
       <p>Jockey</p>
     </div>
 
