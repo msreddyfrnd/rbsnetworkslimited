@@ -67,6 +67,13 @@ nav a:hover {
     background: #ffffff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     transition: 0.3s;
+
+    /* ✅ Horizontal + vertical alignment fix */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 240px;
 }
 
 .client-card:hover {
@@ -85,9 +92,10 @@ nav a:hover {
 }
 
 /* ✅ TEXT */
-.client-card p {
+.client-card h2 {
+    font-size: 15px;
     font-weight: bold;
-    font-size: 14px;
+    margin: 0;
 }
 
 /* ✅ FOOTER */
@@ -128,38 +136,38 @@ footer {
   <div class="client-list">
 
     <div class="client-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Zoomcar_logo.png/240px-Zoomcar_logo.png" alt="Zoomcar">
-      <p>Zoomcars India Private Limited</p>
+      <img src="rbs_images/zoomcar.png" alt="Zoomcar">
+      <h2>Zoomcars India Private Limited</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f0/Namma_Metro_Logo.svg/200px-Namma_Metro_Logo.svg.png" alt="BMRCL">
-      <p>Bangalore Metro Rail Project (BMRCL)</p>
+      <img src="rbs_images/bmrcl.png" alt="BMRCL">
+      <h2>Bangalore Metro Rail Project (BMRCL)</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Mantri" alt="Mantri">
-      <p>Mantri Square</p>
+      <img src="rbs_images/mantri.png" alt="Mantri">
+      <h2>Mantri Square</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Nexus" alt="Nexus">
-      <p>Nexus Whitefield</p>
+      <img src="rbs_images/nexus.png" alt="Nexus">
+      <h2>Nexus Whitefield</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Prestige" alt="Prestige">
-      <p>Prestige Rex Walk</p>
+      <img src="rbs_images/prestige.png" alt="Prestige">
+      <h2>Prestige Rex Walk</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://via.placeholder.com/120?text=Godrej" alt="Godrej">
-      <p>Godrej Centurian</p>
+      <img src="rbs_images/godrej.png" alt="Godrej">
+      <h2>Godrej Centurian</h2>
     </div>
 
     <div class="client-card">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Jockey_logo.svg/200px-Jockey_logo.svg.png" alt="Jockey">
-      <p>Jockey</p>
+      <img src="rbs_images/jockey.png" alt="Jockey">
+      <h2>Jockey</h2>
     </div>
 
   </div>
