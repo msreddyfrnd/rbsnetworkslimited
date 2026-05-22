@@ -6,7 +6,14 @@
 
 <style>
 
-/* ✅ HEADER SAME AS OTHER PAGES */
+/* ✅ RESET (important for alignment) */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+}
+
+/* ✅ HEADER */
 .header-inner {
     display: flex;
     align-items: center;
@@ -45,65 +52,69 @@ nav a:hover {
 /* ✅ CLIENT SECTION */
 .clients {
     text-align: center;
-    padding: 50px;
+    padding: 60px 40px;
 }
 
 .clients h1 {
-    font-size: 32px;
+    font-size: 34px;
+    margin-bottom: 30px;
 }
 
 /* ✅ GRID */
 .client-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 /* ✅ CARD */
 .client-card {
-    padding: 20px;
-    border-radius: 12px;
+    padding: 25px;
+    border-radius: 14px;
     background: #ffffff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
     transition: 0.3s;
 
-    /* ✅ Horizontal + vertical alignment fix */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-height: 240px;
+
+    height: 260px; /* ✅ fixed height for alignment */
 }
 
 .client-card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-8px);
 }
 
 /* ✅ IMAGE */
 .client-card img {
-    width: 120px;
-    height: 120px;
+    width: 110px;
+    height: 110px;
     object-fit: contain;
     margin-bottom: 15px;
-    background: #f1f5f9;
-    padding: 10px;
-    border-radius: 8px;
+    background: #eef2f7;
+    padding: 12px;
+    border-radius: 10px;
 }
 
 /* ✅ TEXT */
 .client-card h2 {
-    font-size: 15px;
-    font-weight: bold;
+    font-size: 14px;
+    font-weight: 600;
     margin: 0;
+    text-align: center;
 }
 
 /* ✅ FOOTER */
 footer {
     text-align: center;
-    padding: 15px;
+    padding: 20px;
     background: #000;
     color: #fff;
+    margin-top: 40px;
 }
 
 </style>
@@ -146,7 +157,8 @@ footer {
     </div>
 
     <div class="client-card">
-      <img src="rbs_images/mantrisquare.jpg alt="Mantri">
+      <!-- ✅ FIXED ERROR HERE -->
+      <img src="rbs_images/mantrisquare.jpg" alt="Mantri">
       <h2>Mantri Square</h2>
     </div>
 
@@ -154,10 +166,12 @@ footer {
       <img src="rbs_images/nexus.jpg" alt="Nexus">
       <h2>Nexus Whitefield</h2>
     </div>
-      <div class="client-card">
-      <img src="rbs_images/forum_blr.jpg" alt="Nexus">
+
+    <div class="client-card">
+      <img src="rbs_images/forum_blr.jpg" alt="Forum">
       <h2>Forum</h2>
     </div>
+
   </div>
 
 </section>
