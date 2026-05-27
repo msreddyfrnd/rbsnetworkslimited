@@ -1,3 +1,33 @@
+<script>
+(function(){
+  emailjs.init("riy_HNT0u1AZG6RW_");
+})();
+
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  // ✅ Send to YOU (admin)
+  emailjs.sendForm(
+    "service_qchh8fa",
+    "template_scxt23s",
+    this
+  );
+
+  // ✅ Auto-reply to CUSTOMER
+  emailjs.sendForm(
+    "service_qchh8fa",
+    "auto_reply_template",
+    this
+  );
+
+  alert("✅ Message sent successfully!");
+
+  this.reset();
+});
+</script>
+
+----------------
+original
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,6 +40,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* ✅ HEADER FIX */
 header {
   display: flex;
   justify-content: space-between;
@@ -18,6 +49,13 @@ header {
   padding: 10px 30px;
 }
 
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* ✅ MENU RIGHT ALIGN */
 nav {
   display: flex;
   gap: 20px;
@@ -29,6 +67,11 @@ nav a {
   font-weight: bold;
 }
 
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* PAGE */
 .contact-page {
  padding: 40px;
  max-width: 800px;
@@ -46,6 +89,11 @@ nav a {
  margin-top: 20px;
  font-size: 16px;
  line-height: 1.6;
+}
+
+.contact-details b {
+ display: inline-block;
+ width: 90px;
 }
 
 form {
@@ -87,14 +135,14 @@ footer {
   <div class="container header-inner">
         <div class="logo-section">
             <img src="rbs_logo.jpg" class="logo-img">
-            <span style="color:white;font-weight:bold;">RBS Network Solutions</span>
+            <span class="logo-text">RBS Network Solutions</span>
         </div>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="services.html">Services</a>
-          <a href="clients.html">Clients</a>
-          <a href="index.html">Back</a>
-        </nav>
+     <nav>
+       <a href="index.html">Home</a>
+       <a href="services.html">Services</a>
+       <a href="clients.html">Clients</a>
+       <a href="index.html">Back</a>
+     </nav>
   </div>
 </header>
 
@@ -121,8 +169,8 @@ footer {
 
  <!-- ✅ CONTACT FORM -->
  <form id="contact-form">
-   <input type="text" name="from_name" placeholder="Your Name" required>
-   <input type="email" name="from_email" placeholder="Your Email" required>
+   <input type="text" name="user_name" placeholder="Your Name" required>
+   <input type="email" name="user_email" placeholder="Your Email" required>
    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
    <button type="submit">Send Message</button>
  </form>
@@ -138,29 +186,26 @@ footer {
 
 <script>
 (function(){
-  emailjs.init("riy_HNT0u1AZG6RW_"); // ✅ public key
+  emailjs.init("riy_HNT0u1AZG6RW_");
 })();
 
 document.getElementById("contact-form").addEventListener("submit", function(e) {
-  e.preventDefault();
+ e.preventDefault();
 
-  // ✅ Send to admin
-  emailjs.sendForm(
-    "service_qchh8fa",
-    "template_scxt23s",
-    this
-  );
+ emailjs.sendForm(
+   "service_qchh8fa",
+   "template_o45g477",
+   this
+ )
+ .then(function() {
+   alert("✅ Message sent successfully!");
+ })
+ .catch(function(error) {
+   alert("❌ Error: " + error.text);
+   console.log(error);
+ });
 
-  // ✅ Auto-reply to customer
-  emailjs.sendForm(
-    "service_qchh8fa",
-    "auto_reply_template",
-    this
-  );
-
-  alert("✅ Message sent successfully!");
-
-  this.reset();
+ this.reset();
 });
 </script>
 
