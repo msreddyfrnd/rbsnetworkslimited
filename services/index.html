@@ -10,12 +10,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff; /* ✅ White */
+    background-color: #ffffff;
     padding: 15px 30px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Logo section */
 .logo-section {
     display: flex;
     align-items: center;
@@ -29,22 +28,26 @@
 .logo-text {
     font-size: 20px;
     font-weight: bold;
-    color: #00AEEF; /* ✅ Logo blue */
+    color: #00AEEF;
 }
 
-/* Navigation */
+/* ✅ NAV FIX */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
 nav a {
-    margin-left: 20px;
     text-decoration: none;
-    color: #00AEEF; /* ✅ Light blue */
+    color: #00AEEF;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #007bb5; /* ✅ darker blue */
+    color: #007bb5;
 }
 
-/* ===== SERVICES SECTION ===== */
+/* ===== SERVICES ===== */
 .services {
     text-align: center;
     padding: 40px 20px;
@@ -55,7 +58,6 @@ nav a:hover {
     font-size: 28px;
 }
 
-/* Cards layout */
 .card {
     display: inline-block;
     width: 280px;
@@ -80,7 +82,7 @@ nav a:hover {
     font-weight: bold;
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
     text-align: center;
     padding: 15px;
@@ -95,23 +97,21 @@ footer {
 
 <header class="header-inner">
  
-    <!-- LEFT: Logo -->
     <div class="logo-section">
-        <img src="rbs_logo.jpg" class="logo-img">
+        <img src="/rbs_logo.jpg" class="logo-img">
         <span class="logo-text">RBS Network Solutions</span>
     </div>
 
-    <!-- RIGHT: Menu -->
+    <!-- ✅ CLEAN URL NAV -->
     <nav>
         <a href="/">Home</a>
+        <a href="/services/">Services</a>
         <a href="/clients/">Clients</a>
         <a href="/contact/">Contact</a>
-        <a href="/">Back</a>
     </nav>
 
 </header>
 
-<!-- SERVICES -->
 <section class="services">
     <h2>Our Services</h2>
 
