@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Clients - RBS Networks</title>
+
+<style>
+
+/* ✅ RESET */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fb;
+}
+
+/* ✅ HEADER (UPDATED) */
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff; /* ✅ White */
+    padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 20px;
+    font-weight: bold;
+    color: #00AEEF; /* ✅ Logo light blue */
+}
+
+/* ✅ MENU */
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #00AEEF; /* ✅ Match logo */
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #007bb5; /* darker blue */
+}
+
+/* ✅ CLIENT SECTION */
+.clients {
+    text-align: center;
+    padding: 60px 40px;
+}
+
+.clients h1 {
+    font-size: 34px;
+    margin-bottom: 30px;
+}
+
+/* ✅ GRID */
+.client-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ✅ CARD */
+.client-card {
+    padding: 25px;
+    border-radius: 14px;
+    background: #ffffff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 260px;
+}
+
+.client-card:hover {
+    transform: translateY(-8px);
+}
+
+/* ✅ IMAGE */
+.client-card img {
+    width: 110px;
+    height: 110px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    background: #eef2f7;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+/* ✅ TEXT */
+.client-card h2 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+/* ✅ FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+    margin-top: 40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- ✅ HEADER -->
+<header class="header-inner">
+
+  <div class="logo-section">
+    <img src="rbs_logo.jpg" class="logo-img" alt="Logo">
+    <span class="logo-text">RBS Network Solutions</span>
+  </div>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="clients.html">Clients</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+</header>
+
+<!-- ✅ CLIENTS -->
+<section class="clients">
+  <h1>Our Clients</h1>
+
+  <div class="client-list">
+
+    <div class="client-card">
+      <img src="rbs_images/zoomcar.jpg" alt="Zoomcar">
+      <h2>Zoomcars India Private Limited</h2>
+    </div>
+
+    <div class="client-card">
+      <img src="rbs_images/namma_metro.jpg" alt="BMRCL">
+      <h2>Bangalore Metro Rail Project (BMRCL)</h2>
+    </div>
+
+    <div class="client-card">
+      <img src="rbs_images/mantrisquare.jpg" alt="Mantri">
+      <h2>Mantri Square</h2>
+    </div>
+
+    <div class="client-card">
+      <img src="rbs_images/nexus.jpg" alt="Nexus">
+      <h2>Nexus Whitefield</h2>
+    </div>
+
+    <div class="client-card">
+      <img src="rbs_images/forum_blr.jpg" alt="Forum">
+      <h2>Forum</h2>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ✅ FOOTER -->
+<footer>
+  <p>© 2025 RBS Networks</p>
+</footer>
+
+</body>
+</html>
