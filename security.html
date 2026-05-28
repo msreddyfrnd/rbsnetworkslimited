@@ -9,12 +9,13 @@
 
 <style>
 
-/* ✅ HEADER ALIGNMENT + LIGHT BLUE */
+/* ✅ HEADER UPDATED */
 header {
     display: flex;
     align-items: center;
     padding: 15px 40px;
-    background-color: #87CEFA; /* Light Blue */
+    background-color: #ffffff; /* ✅ White */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo-section {
@@ -22,23 +23,36 @@ header {
     align-items: center;
 }
 
-/* ✅ MENU RIGHT SIDE */
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* ✅ LOGO COLOR */
+.logo-text {
+    color: #00AEEF; /* ✅ Light blue */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ✅ MENU RIGHT */
 nav {
     margin-left: auto;
 }
 
+/* ✅ MENU COLOR */
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #000;
+    color: #00AEEF; /* ✅ match logo */
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #1d4ed8;
+    color: #007bb5;
 }
 
-/* ✅ SECTION LAYOUT */
+/* ✅ SECTION LAYOUT (UNCHANGED) */
 .service-section {
     display: flex;
     align-items: center;
@@ -48,12 +62,11 @@ nav a:hover {
     flex-wrap: wrap;
 }
 
-/* Alternate clean backgrounds */
 .service-section:nth-of-type(even) {
     background: #f1f5f9;
 }
 
-/* ✅ TEXT ALIGNMENT IMPROVED */
+/* ✅ TEXT ALIGNMENT */
 .service-text {
     flex: 1;
     min-width: 300px;
@@ -65,7 +78,7 @@ nav a:hover {
     color: #1e293b;
     margin-bottom: 15px;
     font-size: 30px;
-    text-align: left; /* aligned properly */
+    text-align: left;
 }
 
 .service-text p {
@@ -74,7 +87,7 @@ nav a:hover {
     text-align: left;
 }
 
-/* ✅ IMAGE FIX */
+/* ✅ IMAGE */
 .service-img {
     flex: 1;
     min-width: 300px;
@@ -84,7 +97,7 @@ nav a:hover {
 
 .service-img img {
     width: 100%;
-    height: 300px; /* uniform size */
+    height: 300px;
     object-fit: cover;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
@@ -116,7 +129,7 @@ footer {
   </nav>
 </header>
 
-<!-- ✅ 1. VOIP & PBX -->
+<!-- ✅ 1 -->
 <section class="service-section">
 
   <div class="service-text">
@@ -134,7 +147,7 @@ footer {
 
 </section>
 
-<!-- ✅ 2. DATA & FIBER -->
+<!-- ✅ 2 -->
 <section class="service-section">
 
   <div class="service-img">
@@ -151,7 +164,7 @@ footer {
 
 </section>
 
-<!-- ✅ 3. WIRELESS -->
+<!-- ✅ 3 -->
 <section class="service-section">
 
   <div class="service-text">
@@ -168,7 +181,6 @@ footer {
 
 </section>
 
-<!-- ✅ FOOTER -->
 <footer>
   <p>© 2026 RBS Networks</p>
 </footer>
