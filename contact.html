@@ -10,23 +10,51 @@ body {
   font-family: Arial, sans-serif;
 }
 
+/* ✅ HEADER UPDATED */
 header {
+  background-color: #ffffff; /* white */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ✅ ALIGN HEADER */
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #4aa3c0;
-  padding: 10px 30px;
+  padding: 15px 40px;
 }
 
+/* ✅ LOGO */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  color: #00AEEF; /* light blue */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ✅ MENU */
 nav {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 
 nav a {
-  color: white;
+  color: #00AEEF; /* match logo */
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #007bb5;
 }
 
 .contact-page {
@@ -36,7 +64,7 @@ nav a {
 }
 
 .contact-page h1 {
- background-color: #4aa3c0;
+ background-color: #00AEEF; /* match theme */
  color: white;
  padding: 10px;
  text-align: center;
@@ -61,7 +89,7 @@ form input, form textarea {
 }
 
 form button {
- background-color: #4aa3c0;
+ background-color: #00AEEF;
  color: white;
  padding: 10px 20px;
  border: none;
@@ -70,7 +98,7 @@ form button {
 }
 
 form button:hover {
- background-color: #3a8fa8;
+ background-color: #007bb5;
 }
 
 footer {
@@ -83,18 +111,22 @@ footer {
 
 <body>
 
+<!-- ✅ HEADER -->
 <header>
-  <div class="container header-inner">
+  <div class="header-inner">
+
         <div class="logo-section">
             <img src="rbs_logo.jpg" class="logo-img">
-            <span class="logo-text" style="color:white;font-weight:bold;">RBS Network Solutions</span>
+            <span class="logo-text">RBS Network Solutions</span>
         </div>
+
      <nav>
        <a href="index.html">Home</a>
        <a href="services.html">Services</a>
        <a href="clients.html">Clients</a>
        <a href="index.html">Back</a>
      </nav>
+
   </div>
 </header>
 
@@ -125,7 +157,6 @@ footer {
 
    <input type="email" name="from_email" placeholder="Your Email" required>
 
-   <!-- ✅ Mobile Number Field -->
    <input type="tel" name="mobile" placeholder="Mobile Number (10 digits)" 
           pattern="[0-9]{10}" title="Enter 10-digit mobile number" required>
 
@@ -153,20 +184,17 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
  let mobile = document.querySelector("input[name='mobile']").value;
 
- // ✅ Extra validation (JS)
  if(!/^[0-9]{10}$/.test(mobile)){
     alert("❌ Please enter a valid 10-digit mobile number");
     return;
  }
 
- // ✅ Send to ADMIN (2 emails via template)
  emailjs.sendForm(
    "service_qchh8fa",
    "template_scxt23s",
    this
  );
 
- // ✅ Auto reply
  emailjs.sendForm(
    "service_qchh8fa",
    "auto_reply_template",
