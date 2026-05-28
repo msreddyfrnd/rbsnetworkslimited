@@ -9,12 +9,13 @@
 
 <style>
 
-/* ✅ HEADER */
+/* ✅ HEADER (UPDATED) */
 header {
     display: flex;
     align-items: center;
     padding: 15px 40px;
-    background-color: #87CEFA;
+    background-color: #ffffff; /* ✅ WHITE */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo-section {
@@ -22,22 +23,35 @@ header {
     align-items: center;
 }
 
+.logo-img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #00AEEF; /* ✅ LOGO LIGHT BLUE */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ✅ RIGHT MENU */
 nav {
     margin-left: auto;
 }
 
+/* ✅ MENU COLOR */
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #000;
+    color: #00AEEF; /* ✅ MATCH LOGO */
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #1d4ed8;
+    color: #007bb5; /* darker blue */
 }
 
-/* ✅ SECTION */
+/* ✅ SECTION (UNCHANGED) */
 .service-section {
     display: flex;
     align-items: center;
@@ -69,7 +83,7 @@ nav a:hover {
     line-height: 1.7;
 }
 
-/* ✅ IMAGE FIX */
+/* ✅ IMAGE */
 .service-img {
     flex: 1;
     min-width: 300px;
@@ -84,6 +98,7 @@ nav a:hover {
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
 }
 
+/* ✅ FOOTER */
 footer {
     text-align: center;
     padding: 15px;
@@ -137,7 +152,7 @@ footer {
   </div>
 </section>
 
-<!-- 3 ✅ FIXED -->
+<!-- 3 -->
 <section class="service-section">
   <div class="service-text">
     <h2>Maintenance and Upgrades</h2>
@@ -151,7 +166,7 @@ footer {
   </div>
 </section>
 
-<!-- 4 ✅ FIXED -->
+<!-- 4 -->
 <section class="service-section">
   <div class="service-img">
     <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=60">
@@ -165,7 +180,7 @@ footer {
   </div>
 </section>
 
-<!-- 5 ✅ FIXED -->
+<!-- 5 -->
 <section class="service-section">
   <div class="service-text">
     <h2>Access Control Systems</h2>
