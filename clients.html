@@ -6,20 +6,21 @@
 
 <style>
 
-/* ✅ RESET (important for alignment) */
+/* ✅ RESET */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f7fb;
 }
 
-/* ✅ HEADER */
+/* ✅ HEADER (UPDATED) */
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #87CEFA;
+    background-color: #ffffff; /* ✅ White */
     padding: 15px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .logo-section {
@@ -35,18 +36,19 @@ body {
 .logo-text {
     font-size: 20px;
     font-weight: bold;
+    color: #00AEEF; /* ✅ Logo light blue */
 }
 
 /* ✅ MENU */
 nav a {
     margin-left: 25px;
     text-decoration: none;
-    color: #000;
+    color: #00AEEF; /* ✅ Match logo */
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #1d4ed8;
+    color: #007bb5; /* darker blue */
 }
 
 /* ✅ CLIENT SECTION */
@@ -82,7 +84,7 @@ nav a:hover {
     align-items: center;
     justify-content: space-between;
 
-    height: 260px; /* ✅ fixed height for alignment */
+    height: 260px;
 }
 
 .client-card:hover {
@@ -157,7 +159,6 @@ footer {
     </div>
 
     <div class="client-card">
-      <!-- ✅ FIXED ERROR HERE -->
       <img src="rbs_images/mantrisquare.jpg" alt="Mantri">
       <h2>Mantri Square</h2>
     </div>
