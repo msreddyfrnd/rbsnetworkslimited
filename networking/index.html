@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Networking Services - RBS Networks</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ✅ HEADER FIX + WHITE */
+    header {
+      display: flex;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #ffffff; /* ✅ White */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    /* ✅ LOGO TEXT COLOR */
+    .logo-text {
+      color: #00AEEF; /* ✅ Light blue */
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    /* ✅ PUSH MENU TO RIGHT */
+    nav {
+      margin-left: auto;
+    }
+
+    /* ✅ MENU COLOR */
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #00AEEF; /* ✅ Light blue */
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #007bb5; /* darker blue */
+    }
+
+    /* ✅ SERVICE SECTIONS (UNCHANGED DESIGN) */
+    .service-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+      padding: 60px 40px;
+      flex-wrap: wrap;
+    }
+
+    .service-section:nth-of-type(even) {
+      background: #f1f5f9;
+    }
+
+    .service-text {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+    }
+
+    .service-text h1,
+    .service-text h2 {
+      color: #1e293b;
+      margin-bottom: 15px;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    .service-text p {
+      color: #555;
+      line-height: 1.7;
+      text-align: left;
+    }
+
+    .service-img {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .service-img img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    }
+
+    /* ✅ FOOTER */
+    footer {
+      text-align: center;
+      padding: 15px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!-- ✅ HEADER -->
+<header>
+  <div class="logo-section">
+    <img src="rbs_logo.jpg" class="logo-img">
+    <span class="logo-text">RBS Network Solutions</span>
+  </div>
+
+  <!-- ✅ RIGHT SIDED MENU -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="clients.html">Clients</a>
+    <a href="contact.html">Contact</a>
+    <a href="services.html">Back</a>
+  </nav>
+</header>
+
+<!-- ✅ 1. NETWORK INFRASTRUCTURE -->
+<section class="service-section">
+  <div class="service-text">
+    <h1>Network Infrastructure</h1>
+    <p>
+      We specialize in the design, installation, and management of Fibre to the Home (FTTH) 
+      and structured cabling solutions. We deliver complete infrastructure including data, 
+      voice, and video systems with scalable and reliable connectivity solutions.
+    </p>
+  </div>
+
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=900&q=60">
+  </div>
+</section>
+
+<!-- ✅ 2. MANAGED SERVICES -->
+<section class="service-section">
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&fit=crop&w=900&q=60">
+  </div>
+
+  <div class="service-text">
+    <h2>Managed Services</h2>
+    <p>
+      We design and deploy advanced wired and wireless network environments with 
+      enterprise-grade access points, ISP integration, and centralized monitoring.
+    </p>
+  </div>
+</section>
+
+<!-- ✅ 3. IT SUPPORT -->
+<section class="service-section">
+  <div class="service-text">
+    <h2>IT Support</h2>
+    <p>
+      Our team provides complete helpdesk and managed IT services covering hardware, 
+      software, and networking challenges.
+    </p>
+  </div>
+
+  <div class="service-img">
+    <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=900&q=60">
+  </div>
+</section>
+
+<!-- ✅ FOOTER -->
+<footer>
+  <p>© 2026 RBS Networks</p>
+</footer>
+
+</body>
+</html>
