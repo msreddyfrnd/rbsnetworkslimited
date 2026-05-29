@@ -67,18 +67,20 @@ nav a:hover {
     font-size: 28px;
 }
 
-.card {
-    display: inline-block;
-    width: 280px;
-    margin: 15px;
-    text-align: center;
-    vertical-align: top;
+.card a {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;        /* ✅ Increased size */
+    font-weight: 600;       /* ✅ Professional weight */
+    letter-spacing: 0.4px;  /* ✅ Better spacing */
+    text-decoration: none;
+    color: #222;
     transition: 0.3s;
 }
 
-/* ✅ ADD SMALL HOVER EFFECT */
-.card:hover {
-    transform: translateY(-5px);
+/* ✅ HOVER EFFECT (PRO LOOK) */
+.card a:hover {
+    color: #00AEEF;
 }
 
 .card img {
