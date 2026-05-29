@@ -5,91 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About - RBS Networks</title>
 
-<link rel="stylesheet" href="style.css">
-
 <style>
 
-/* ✅ HERO SECTION */
-.about-hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 80px 20px;
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fa;
 }
 
-.about-hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
+/* CONTAINER */
+.container {
+    max-width: 1100px;
+    margin: auto;
 }
 
-.about-hero p {
-    font-size: 18px;
-}
-
-/* ✅ MAIN SECTION */
-.about-company {
-    padding: 50px 20px;
-}
-
-/* ✅ CARD BLOCK */
-.about-block {
-    background: #ffffff;
-    padding: 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.about-block:hover {
-    transform: translateY(-5px);
-}
-
-.about-block h2 {
-    color: #00AEEF; /* ✅ logo light blue */
-    margin-bottom: 15px;
-}
-
-.about-block p {
-    color: #444;
-    line-height: 1.7;
-}
-
-.about-block ul {
-    padding-left: 20px;
-}
-
-.about-block li {
-    margin-bottom: 10px;
-}
-
-/* ✅ HIGHLIGHTS */
-.highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 40px;
-}
-
-.highlight-card {
-    background: #00AEEF; /* ✅ match theme */
-    color: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-/* ✅ HEADER (UPDATED) */
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #ffffff; /* ✅ white menu */
-    padding: 12px 40px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: #ffffff;
+    padding: 15px 40px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
 }
 
 .logo-section {
@@ -103,20 +41,19 @@ header {
 }
 
 .logo-text {
-    color: #00AEEF; /* ✅ logo blue */
+    color: #00AEEF;
     font-size: 22px;
     font-weight: bold;
 }
 
 nav {
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
 nav a {
-    color: #00AEEF; /* ✅ menu text */
+    color: #00AEEF;
     text-decoration: none;
-    font-size: 16px;
     font-weight: 600;
 }
 
@@ -124,22 +61,119 @@ nav a:hover {
     color: #007bb5;
 }
 
-/* ✅ FOOTER */
+/* HERO */
+.about-hero {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.about-hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+/* SECTION */
+.about-company {
+    padding: 60px 20px;
+}
+
+/* BLOCKS */
+.about-block {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.about-block:hover {
+    transform: translateY(-5px);
+}
+
+.about-block h2 {
+    color: #00AEEF;
+}
+
+.about-block p {
+    line-height: 1.7;
+    color: #444;
+}
+
+.about-block ul {
+    padding-left: 20px;
+}
+
+/* NEW: VALUES GRID */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.value-card {
+    background: #eef7fc;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* HIGHLIGHTS */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+    gap: 20px;
+}
+
+.highlight-card {
+    background: #00AEEF;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CTA SECTION */
+.cta {
+    background: #0a2540;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 15px;
+    background: #00AEEF;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.cta a:hover {
+    background: #007bb5;
+}
+
+/* FOOTER */
 footer {
     background: #111;
     color: white;
     text-align: center;
     padding: 15px;
-    margin-top: 40px;
 }
 
 </style>
-
 </head>
 
 <body>
 
-<!-- ✅ HEADER -->
+<!-- HEADER -->
 <header>
   <div class="logo-section">
       <img src="/rbs_images/rbs_logo.jpg" class="logo-img">
@@ -155,13 +189,13 @@ footer {
   </nav>
 </header>
 
-<!-- ✅ HERO -->
+<!-- HERO -->
 <section class="about-hero">
   <h1>About RBS Networks</h1>
-  <p>Delivering Reliable, Secure & Scalable IT Solutions</p>
+  <p>Delivering Reliable, Secure & Scalable Cctv Solutions</p>
 </section>
 
-<!-- ✅ CONTENT -->
+<!-- CONTENT -->
 <section class="about-company">
 <div class="container">
 
@@ -171,19 +205,26 @@ footer {
     <p><strong>RBS NETWORKS SOLUTIONS</strong></p>
     <p>Established in 2025 | Bangalore, India</p>
     <p>
-      RBS Networks is a modern IT and Network Solutions company focused on delivering
-      high-performance infrastructure and technology services. We help businesses
+      RBS Networks is a modern Cctv and Network Solutions company focused on delivering
+      high-performance infrastructure and security services. We help businesses
       stay connected, secure, and future-ready with reliable solutions.
     </p>
+  </div>
+
+  <!-- MISSION & VISION (NEW) -->
+  <div class="about-block">
+    <h2>Our Mission & Vision</h2>
+    <p><strong>Mission:</strong> To deliver reliable, secure, and scalable Cctv and Security solution that empower businesses.</p>
+    <p><strong>Vision:</strong> To become a trusted technology partner for enterprises across India and beyond.</p>
   </div>
 
   <!-- WHAT WE DO -->
   <div class="about-block">
     <h2>What We Do</h2>
     <ul>
-      <li><strong>Network Infrastructure</strong> – Design and deployment of enterprise networks.</li>
-      <li><strong>Cloud & Data Services</strong> – Secure storage and data management.</li>
-      <li><strong>IT Consulting</strong> – Strategy-driven technology solutions.</li>
+      <li><strong>Network Infrastructure</strong> – Enterprise-grade network design & deployment</li>
+      <li><strong>Cctv & Security</strong> – Cctv and Security solutions</li>
+      <li><strong>Telicom and communication </strong> – Telicom and communications</li>
     </ul>
   </div>
 
@@ -191,11 +232,22 @@ footer {
   <div class="about-block">
     <h2>Why Choose Us</h2>
     <ul>
-      <li><strong>✔ Reliability</strong> – 24/7 uptime-focused solutions</li>
-      <li><strong>✔ Security</strong> – Advanced data protection</li>
-      <li><strong>✔ Scalability</strong> – Grow without limits</li>
-      <li><strong>✔ Expert Support</strong> – Dedicated technical team</li>
+      <li>✔ Reliability – 24/7 uptime-focused solutions</li>
+      <li>✔ Security – Advanced data protection</li>
+      <li>✔ Scalability – Business-ready infrastructure</li>
+      <li>✔ Expert Support – Dedicated technical team</li>
     </ul>
+  </div>
+
+  <!-- VALUES (NEW) -->
+  <div class="about-block">
+    <h2>Our Core Values</h2>
+    <div class="values-grid">
+        <div class="value-card">Integrity & Transparency</div>
+        <div class="value-card">Customer First</div>
+        <div class="value-card">Innovation</div>
+        <div class="value-card">Excellence in Delivery</div>
+    </div>
   </div>
 
   <!-- HIGHLIGHTS -->
@@ -219,6 +271,14 @@ footer {
 </div>
 </section>
 
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Work With Us?</h2>
+  <p>Let’s build a strong, secure, and scalable IT infrastructure together.</p>
+  <a href="/contact/">Contact Us</a>
+</section>
+
+<!-- FOOTER -->
 <footer>
   © 2025 RBS Networks. All Rights Reserved.
 </footer>
