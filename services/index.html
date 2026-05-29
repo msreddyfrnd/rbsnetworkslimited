@@ -2,17 +2,25 @@
 <html>
 <head>
 <title>Our Services - RBS Networks</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-/* ===== HEADER / MENU BAR ===== */
+/* ===== GENERAL ===== */
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f5f7fa;
+}
+
+/* ===== HEADER ===== */
 .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
 .logo-section {
@@ -31,7 +39,7 @@
     color: #00AEEF;
 }
 
-/* ✅ UPDATED NAV (CTA STYLE) */
+/* NAV */
 nav {
     display: flex;
     gap: 12px;
@@ -45,40 +53,52 @@ nav a {
     border-radius: 30px;
     font-size: 14px;
     font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0,174,239,0.3);
+    transition: 0.3s;
 }
 
-/* ✅ HOVER EFFECT */
 nav a:hover {
     background: #007bb5;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(0,123,181,0.35);
 }
 
 /* ===== SERVICES ===== */
 .services {
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .services h2 {
-    margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
-    
-card {
-    display: inline-block;
-    width: 280px;
-    margin: 15px;
-    text-align: center;
-    vertical-align: top;
+
+/* ✅ PERFECT ROW ALIGNMENT */
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* ✅ CARD */
+.card {
+    flex: 1;                /* ✅ equal size cards */
+    max-width: 320px;
+    min-width: 260px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
+/* ✅ IMAGE */
 .card img {
     width: 100%;
     height: 180px;
@@ -86,23 +106,43 @@ card {
     border-radius: 10px;
 }
 
+/* ✅ TITLE */
+.card a {
+    display: block;
+    margin-top: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    text-decoration: none;
+}
+
+.card a:hover {
+    color: #00AEEF;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
-    padding: 15px;
-    background-color: #f1f1f1;
+    padding: 20px;
+    background: #0a2540;
+    color: #ccc;
     margin-top: 40px;
 }
 
 /* ✅ MOBILE */
-@media (max-width: 768px) {
-    nav {
+@media (max-width: 900px) {
+    .services-container {
         flex-wrap: wrap;
-        justify-content: center;
     }
 
     .card {
+        flex: none;
         width: 90%;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
 
@@ -111,6 +151,7 @@ footer {
 
 <body>
 
+<!-- HEADER -->
 <header class="header-inner">
  
     <div class="logo-section">
@@ -118,7 +159,6 @@ footer {
         <span class="logo-text">RBS Network Solutions</span>
     </div>
 
-    <!-- ✅ CTA STYLE NAV -->
     <nav>
         <a href="/">Home</a>
         <a href="/about/">About</a>
@@ -128,26 +168,32 @@ footer {
 
 </header>
 
+<!-- SERVICES -->
 <section class="services">
     <h2>Our Services</h2>
 
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=60">
-        <a href="/networking/">IT Network Solutions</a>
-    </div>
-    
-    <div class="card">
-         <img src="/rbs_images/cctv_image.jpg" alt="cctv">
-        <a href="/cloud/">CCTV and Security</a>
-    </div>
+    <div class="services-container">
 
-    <div class="card">
-        <img src="/rbs_images/telephone_image.jpg" alt="Telephone">
-        <a href="/security/">Telecom and Communication</a>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=60">
+            <a href="/networking/">IT Network Solutions</a>
+        </div>
+        
+        <div class="card">
+            <img src="/rbs_images/cctv_image.jpg" alt="cctv">
+            <a href="/cloud/">CCTV and Security</a>
+        </div>
+
+        <div class="card">
+            <img src="/rbs_images/telephone_image.jpg" alt="Telephone">
+            <a href="/security/">Telecom and Communication</a>
+        </div>
+
     </div>
 
 </section>
 
+<!-- FOOTER -->
 <footer>
  <p>© 2025 RBS Network Solutions</p>
 </footer>
