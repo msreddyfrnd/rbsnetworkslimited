@@ -10,7 +10,6 @@
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
-    color: #333;
 }
 
 /* HEADER */
@@ -20,6 +19,12 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+/* SHRINK HEADER */
+header.shrink {
+    padding: 5px 0;
 }
 
 /* CONTAINER */
@@ -57,31 +62,46 @@ header {
 /* NAV */
 nav {
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 
+/* NAV BUTTON */
 nav a {
-    color: #00AEEF;
+    background: #00AEEF;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
-    position: relative;
-}
-
-/* underline animation */
-nav a::after {
-    content: "";
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background: #007bb5;
-    left: 0;
-    bottom: -5px;
     transition: 0.3s;
 }
 
-nav a:hover::after {
-    width: 100%;
+nav a:hover {
+    background: #007bb5;
+    transform: translateY(-2px);
+}
+
+/* ACTIVE */
+nav a.active {
+    box-shadow: 0 0 10px #00AEEF;
+}
+
+/* CONTACT BUTTON */
+nav a.contact-btn {
+    background: #007bb5;
+    font-weight: bold;
+}
+
+nav a.contact-btn:hover {
+    background: #005f8f;
+}
+
+/* HAMBURGER */
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 
 /* HERO */
@@ -97,41 +117,23 @@ nav a:hover::after {
 
 .hero h1 {
     font-size: 44px;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    opacity: 0.95;
 }
 
 /* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 14px 30px;
     background: #00AEEF;
     color: white;
-    text-decoration: none;
     border-radius: 30px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #007bb5;
-    transform: translateY(-2px);
+    text-decoration: none;
 }
 
 /* SECTION */
 .section {
     padding: 70px 20px;
     text-align: center;
-}
-
-.section-title {
-    font-size: 30px;
-    margin-bottom: 40px;
 }
 
 /* STATS */
@@ -144,50 +146,41 @@ nav a:hover::after {
 
 .stat-box {
     background: white;
-    padding: 30px;
-    border-radius: 15px;
+    padding: 25px;
+    border-radius: 10px;
     width: 180px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
-}
-
-.stat-box:hover {
-    transform: translateY(-5px);
-}
-
-.stat-box h2 {
-    color: #00AEEF;
-    margin-bottom: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 /* FOOTER */
 footer {
     background: #0a2540;
-    color: #ccc;
+    color: white;
     text-align: center;
-    padding: 30px 20px;
-    font-size: 14px;
+    padding: 20px;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
 
-    .header-inner {
-        flex-direction: column;
-        gap: 10px;
+    .menu-toggle {
+        display: block;
     }
 
     nav {
-        flex-wrap: wrap;
-        justify-content: center;
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
     }
 
-    .hero {
-        padding: 80px 20px;
+    nav.active {
+        display: flex;
     }
 
-    .hero h1 {
-        font-size: 30px;
+    .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
     }
 }
 
@@ -197,19 +190,22 @@ footer {
 <body>
 
 <!-- HEADER -->
-<header>
+<header id="header">
     <div class="container header-inner">
         <div class="logo-section">
             <img src="rbs_logo.jpg" class="logo-img">
             <span class="logo-text">RBS Network Solutions</span>
         </div>
 
-        <nav>
-            <a href="/">Home</a>
+        <!-- HAMBURGER -->
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+        <nav id="navbar">
+            <a href="/" class="active">Home</a>
             <a href="/about/">About</a>
             <a href="/services/">Services</a>
             <a href="/clients/">Clients</a>
-            <a href="/contact/">Contact</a>
+            <a href="/contact/" class="contact-btn">Contact</a>
         </nav>
     </div>
 </header>
@@ -218,31 +214,29 @@ footer {
 <section class="hero">
     <div class="container">
         <h1>Cloud & Networking Experts</h1>
-        <p>Professional IT Infrastructure, Security, Telecom & Networking Solutions</p>
+        <p>Professional IT Infrastructure, Security & Networking Solutions</p>
         <a class="btn" href="/services/">Explore Services</a>
     </div>
 </section>
 
 <!-- SECTION -->
 <section class="section">
-    <div class="container">
-        <h2 class="section-title">Why Choose Us</h2>
+    <h2>Why Choose Us</h2>
 
-        <div class="stats">
-            <div class="stat-box">
-                <h2>150+</h2>
-                <p>Projects</p>
-            </div>
+    <div class="stats">
+        <div class="stat-box">
+            <h2>150+</h2>
+            <p>Projects</p>
+        </div>
 
-            <div class="stat-box">
-                <h2>80+</h2>
-                <p>Clients</p>
-            </div>
+        <div class="stat-box">
+            <h2>80+</h2>
+            <p>Clients</p>
+        </div>
 
-            <div class="stat-box">
-                <h2>15+</h2>
-                <p>Years Experience</p>
-            </div>
+        <div class="stat-box">
+            <h2>15+</h2>
+            <p>Years Experience</p>
         </div>
     </div>
 </section>
@@ -251,6 +245,23 @@ footer {
 <footer>
     © 2025 RBS Network Solutions | All Rights Reserved
 </footer>
+
+<!-- ✅ JAVASCRIPT -->
+<script>
+function toggleMenu() {
+    document.getElementById("navbar").classList.toggle("active");
+}
+
+// ✅ Shrink header on scroll
+window.addEventListener("scroll", function() {
+    const header = document.getElementById("header");
+    if (window.scrollY > 50) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+});
+</script>
 
 </body>
 </html>
