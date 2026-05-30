@@ -13,12 +13,12 @@ body {
     background-color: #f5f7fb;
 }
 
-/* ✅ HEADER (UPDATED) */
+/* ✅ HEADER (UPDATED CTA STYLE) */
 .header-inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffffff; /* ✅ White */
+    background-color: #ffffff;
     padding: 15px 40px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -36,19 +36,37 @@ body {
 .logo-text {
     font-size: 20px;
     font-weight: bold;
-    color: #00AEEF; /* ✅ Logo light blue */
+    color: #00AEEF;
 }
 
-/* ✅ MENU */
+/* ✅ CTA NAV BUTTONS */
+nav {
+    display: flex;
+    gap: 12px;
+}
+
 nav a {
-    margin-left: 25px;
     text-decoration: none;
-    color: #00AEEF; /* ✅ Match logo */
-    font-weight: 500;
+    background: #00AEEF;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,174,239,0.3);
 }
 
+/* ✅ HOVER EFFECT */
 nav a:hover {
-    color: #007bb5; /* darker blue */
+    background: #007bb5;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,123,181,0.35);
+}
+
+/* ✅ ACTIVE PAGE */
+nav a.active {
+    outline: 2px solid #005f8f;
 }
 
 /* ✅ CLIENT SECTION */
@@ -119,6 +137,14 @@ footer {
     margin-top: 40px;
 }
 
+/* ✅ MOBILE */
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 </style>
 
 </head>
@@ -135,8 +161,9 @@ footer {
 
   <nav>
     <a href="/">Home</a>
+    <a href="/about/">About</a>
     <a href="/services/">Services</a>
-    <a href="/clients/">Clients</a>
+    <a href="/about/" class="active">About</a>
     <a href="/contact/">Contact</a>
   </nav>
 
