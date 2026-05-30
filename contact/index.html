@@ -6,15 +6,17 @@
 
 <style>
 
+/* ===== GENERAL ===== */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fa;
 }
 
-/* ✅ HEADER */
+/* ===== HEADER ===== */
 header {
   background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
 .header-inner {
@@ -41,7 +43,7 @@ header {
   font-size: 20px;
 }
 
-/* ✅ CTA NAV BUTTONS */
+/* ✅ NAVBAR CTA */
 nav {
   display: flex;
   gap: 12px;
@@ -56,69 +58,103 @@ nav a {
   font-weight: 600;
   font-size: 14px;
   transition: 0.3s;
-  box-shadow: 0 4px 10px rgba(0,174,239,0.3);
 }
 
-/* ✅ HOVER */
 nav a:hover {
   background: #007bb5;
   transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(0,123,181,0.35);
 }
 
-/* ✅ ACTIVE PAGE (CONTACT) */
+/* ACTIVE */
 nav a.active {
   outline: 2px solid #005f8f;
 }
 
-/* ✅ CONTACT PAGE */
+/* ===== CONTACT SECTION ===== */
 .contact-page {
- padding: 40px;
- max-width: 800px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
+ padding: 50px 20px;
+ max-width: 1000px;
  margin: auto;
 }
 
-.contact-page h1 {
- background-color: #00AEEF;
- color: white;
- padding: 10px;
- text-align: center;
+/* LEFT SIDE (DETAILS) */
+.contact-info {
+ flex: 1;
+ min-width: 280px;
 }
 
-.contact-details {
- margin-top: 20px;
- font-size: 16px;
+.contact-info h1 {
+ color: #00AEEF;
+ margin-bottom: 15px;
+}
+
+.contact-info p {
  line-height: 1.6;
 }
 
-form {
- margin-top: 30px;
+/* RIGHT SIDE (FORM CARD) */
+.contact-form {
+ flex: 1;
+ min-width: 280px;
+ background: #ffffff;
+ padding: 25px;
+ border-radius: 12px;
+ box-shadow: 0 8px 25px rgba(0,0,0,0.08);
 }
 
+/* FORM */
 form input, form textarea {
  width: 100%;
- padding: 10px;
+ padding: 12px;
  margin: 8px 0;
  border: 1px solid #ccc;
- border-radius: 5px;
+ border-radius: 6px;
+ font-size: 14px;
 }
 
 form button {
+ width: 100%;
  background-color: #00AEEF;
  color: white;
- padding: 10px 20px;
+ padding: 12px;
  border: none;
- border-radius: 5px;
+ border-radius: 6px;
  cursor: pointer;
+ font-size: 16px;
+ font-weight: 600;
+ transition: 0.3s;
 }
 
 form button:hover {
  background-color: #007bb5;
 }
 
+/* FOOTER */
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 15px;
+  background: #0a2540;
+  color: #ccc;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .contact-page {
+    flex-direction: column;
+  }
 }
 
 </style>
@@ -127,7 +163,7 @@ footer {
 
 <body>
 
-<!-- ✅ HEADER -->
+<!-- HEADER -->
 <header>
   <div class="header-inner">
 
@@ -136,22 +172,24 @@ footer {
             <span class="logo-text">RBS Network Solutions</span>
         </div>
 
-     <!-- ✅ CTA NAV -->
-     <nav>
-       <a href="/">Home</a>
-       <a href="/about/">About</a>
-       <a href="/services/">Services</a>
-       <a href="/clients/">Clients</a>
-     </nav>
+        <nav>
+           <a href="/">Home</a>
+           <a href="/about/">About</a>
+           <a href="/services/">Services</a>
+           <a href="/clients/">Clients</a>
+           <a href="/contact/" class="active">Contact</a>
+        </nav>
 
   </div>
 </header>
 
+<!-- CONTACT SECTION -->
 <section class="contact-page">
 
- <h1>CONTACT US</h1>
+ <!-- LEFT: DETAILS -->
+ <div class="contact-info">
+   <h1>Contact Us</h1>
 
- <div class="contact-details">
    <p><b>Address:</b></p>
    <p>
    RBS NETWORK SOLUTIONS<br>
@@ -160,35 +198,40 @@ footer {
    Bangalore - 560094
    </p>
 
-   <p><b>WhatsApp:</b> 7892554609, 9353961667</p>
-   <p><b>E-Mail:</b> 
+   <p><b>WhatsApp:</b><br> 7892554609, 9353961667</p>
+
+   <p><b>Email:</b><br> 
      <a href="mailto:rbsnetworks2025@gmail.com">
        rbsnetworks2025@gmail.com
      </a>
    </p>
  </div>
 
- <!-- ✅ CONTACT FORM -->
- <form id="contact-form">
-   <input type="text" name="from_name" placeholder="Your Name" required>
+ <!-- RIGHT: FORM -->
+ <div class="contact-form">
+   <form id="contact-form">
+     <input type="text" name="from_name" placeholder="Your Name" required>
 
-   <input type="email" name="from_email" placeholder="Your Email" required>
+     <input type="email" name="from_email" placeholder="Your Email" required>
 
-   <input type="tel" name="mobile" placeholder="Mobile Number (10 digits)" 
-          pattern="[0-9]{10}" title="Enter 10-digit mobile number" required>
+     <input type="tel" name="mobile"
+            placeholder="Mobile Number (10 digits)"
+            pattern="[0-9]{10}" required>
 
-   <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
 
-   <button type="submit">Send Message</button>
- </form>
+     <button type="submit">Send Message</button>
+   </form>
+ </div>
 
 </section>
 
+<!-- FOOTER -->
 <footer>
  <p>© 2025 RBS Networks</p>
 </footer>
 
-<!-- ✅ EmailJS -->
+<!-- EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
@@ -199,7 +242,7 @@ footer {
 document.getElementById("contact-form").addEventListener("submit", function(e) {
  e.preventDefault();
 
- let mobile = document.querySelector("input[name='mobile']").value
+ let mobile = document.querySelector("input[name='mobile']").value;
 
  if(!/^[0-9]{10}$/.test(mobile)){
     alert("❌ Please enter a valid 10-digit mobile number");
