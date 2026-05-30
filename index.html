@@ -7,73 +7,57 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ GOOGLE VERIFICATION -->
+<!-- GOOGLE VERIFICATION -->
 <meta name="google-site-verification" content="googlef1c5627b26157128.html">
 
-<!-- ✅ FAVICON (FIXED POSITION ✅) -->
+<!-- FAVICON -->
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="manifest" href="/site.webmanifest">
 
-<!-- ✅ SEO META TAGS -->
+<!-- SEO -->
 <meta name="description" content="RBS Network Solutions provides CCTV installation, networking, telecom and IT infrastructure services in Bangalore. Reliable & secure business solutions.">
-
 <meta name="keywords" content="CCTV installation Bangalore, network solutions Bangalore, IT support Bangalore, telecom services Bangalore, security systems Bangalore">
-
 <meta name="author" content="RBS Network Solutions">
 
-<!-- ✅ OPEN GRAPH -->
+<!-- OPEN GRAPH -->
 <meta property="og:title" content="RBS Network Solutions - CCTV & Networking Experts in Bangalore">
 <meta property="og:description" content="Professional CCTV, Security and Network Solutions in Bangalore.">
 <meta property="og:type" content="website">
 
-<!-- ✅ SCHEMA -->
+<!-- ✅ FIXED SCHEMA (CORRECT NUMBER) -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "LocalBusiness",
  "name": "RBS Network Solutions",
+ "telephone": "+91-9353961667",
+ "areaServed": "Bangalore",
  "address": {
    "@type": "PostalAddress",
    "addressLocality": "Bangalore",
    "addressCountry": "India"
- },
- "telephone": "+91-7892554609"
+ }
 }
 </script>
 
 <style>
+body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; }
 
-/* RESET */
-body {
-    margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
-}
-
-/* HEADER */
 header {
     background: #ffffff;
     position: sticky;
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-    transition: 0.3s;
 }
 
-header.shrink {
-    padding: 5px 0;
-}
+header.shrink { padding: 5px 0; }
 
-/* CONTAINER */
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 20px;
-}
+.container { max-width: 1200px; margin: auto; padding: 0 20px; }
 
-/* HEADER ALIGNMENT */
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -81,28 +65,13 @@ header.shrink {
     padding: 15px 0;
 }
 
-/* LOGO */
-.logo-section {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+.logo-section { display: flex; align-items: center; gap: 10px; }
 
-.logo-img {
-    height: 42px;
-}
+.logo-img { height: 42px; }
 
-.logo-text {
-    color: #00AEEF;
-    font-size: 22px;
-    font-weight: bold;
-}
+.logo-text { color: #00AEEF; font-size: 22px; font-weight: bold; }
 
-/* NAV */
-nav {
-    display: flex;
-    gap: 10px;
-}
+nav { display: flex; gap: 10px; }
 
 nav a {
     background: #00AEEF;
@@ -110,52 +79,25 @@ nav a {
     padding: 10px 18px;
     border-radius: 30px;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    transition: 0.3s;
 }
 
-nav a:hover {
-    background: #007bb5;
-    transform: translateY(-2px);
-}
+nav a:hover { background: #007bb5; }
 
-nav a.active {
-    box-shadow: 0 0 10px #00AEEF;
-}
+nav a.contact-btn { background: #007bb5; }
 
-nav a.contact-btn {
-    background: #007bb5;
-    font-weight: bold;
-}
+.menu-toggle { display: none; font-size: 28px; cursor: pointer; }
 
-nav a.contact-btn:hover {
-    background: #005f8f;
-}
-
-/* HAMBURGER */
-.menu-toggle {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* HERO */
 .hero {
     background: linear-gradient(rgba(10,37,64,0.8), rgba(0,123,255,0.8)),
                 url('https://images.unsplash.com/photo-1526378722484-cc5c5106a86e');
     background-size: cover;
-    background-position: center;
     color: white;
     text-align: center;
     padding: 110px 20px;
 }
 
-.hero h1 {
-    font-size: 44px;
-}
+.hero h1 { font-size: 44px; }
 
-/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 20px;
@@ -166,19 +108,9 @@ nav a.contact-btn:hover {
     text-decoration: none;
 }
 
-/* SECTION */
-.section {
-    padding: 70px 20px;
-    text-align: center;
-}
+.section { padding: 70px 20px; text-align: center; }
 
-/* STATS */
-.stats {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-}
+.stats { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
 
 .stat-box {
     background: white;
@@ -188,7 +120,6 @@ nav a.contact-btn:hover {
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-/* FOOTER */
 footer {
     background: #0a2540;
     color: white;
@@ -196,91 +127,77 @@ footer {
     padding: 20px;
 }
 
-/* MOBILE */
 @media (max-width: 768px) {
-    .menu-toggle {
-        display: block;
-    }
-
-    nav {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background: white;
-    }
-
-    nav.active {
-        display: flex;
-    }
-
-    .header-inner {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    .menu-toggle { display: block; }
+    nav { display: none; flex-direction: column; width: 100%; }
+    nav.active { display: flex; }
 }
-
 </style>
+
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header id="header">
-    <div class="container header-inner">
-        <div class="logo-section">
-            <img src="rbs_logo.jpg" class="logo-img">
-            <span class="logo-text">RBS Network Solutions</span>
-        </div>
+<div class="container header-inner">
 
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+<div class="logo-section">
+<img src="rbs_logo.jpg" class="logo-img">
+<span class="logo-text">RBS Network Solutions</span>
+</div>
 
-        <nav id="navbar">
-            <a href="/" class="active">Home</a>
-            <a href="/about/">About</a>
-            <a href="/services/">Services</a>
-            <a href="/clients/">Clients</a>
-            <a href="/contact/" class="contact-btn">Contact</a>
-        </nav>
-    </div>
+<div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="navbar">
+<a href="/" class="active">Home</a>
+<a href="/about/">About</a>
+<a href="/services/">Services</a>
+<a href="/clients/">Clients</a>
+<a href="/contact/" class="contact-btn">Contact</a>
+</nav>
+
+</div>
 </header>
+
+<!-- ✅ YOUR ADDED CONTENT (MERGED PROPERLY) -->
+<section class="section">
+<h1>CCTV Installation in Bhoopasandra, Bangalore</h1>
+
+<p>
+Looking for CCTV installation & network technicians near Kalpana Chawla Road, Bhoopasandra? 
+RBS Network Solutions provides expert CCTV, LAN networking, and telecom services across Bangalore.
+</p>
+
+<p><strong>Call us: +91 9353961667</strong></p>
+</section>
 
 <!-- HERO -->
 <section class="hero">
-    <div class="container">
-        <h1>CCTV Installation & Network Solutions in Bangalore</h1>
-        <p>Professional IT Infrastructure, Security, Telecom & Networking Services in Bangalore</p>
-        <a class="btn" href="/services/">Explore Services</a>
-    </div>
+<div class="container">
+<h1>CCTV Installation & Network Solutions in Bangalore</h1>
+<p>Professional IT Infrastructure, Security, Telecom & Networking Services in Bangalore</p>
+<a class="btn" href="/services/">Explore Services</a>
+</div>
 </section>
 
 <!-- SECTION -->
 <section class="section">
-    <h2>Why Choose Us</h2>
+<h2>Why Choose Us</h2>
 
-    <div class="stats">
-        <div class="stat-box">
-            <h2>150+</h2>
-            <p>Projects</p>
-        </div>
+<div class="stats">
+<div class="stat-box"><h2>150+</h2><p>Projects</p></div>
+<div class="stat-box"><h2>80+</h2><p>Clients</p></div>
+<div class="stat-box"><h2>15+</h2><p>Years Experience</p></div>
+</div>
 
-        <div class="stat-box">
-            <h2>80+</h2>
-            <p>Clients</p>
-        </div>
-
-        <div class="stat-box">
-            <h2>15+</h2>
-            <p>Years Experience</p>
-        </div>
-    </div>
 </section>
 
 <!-- FOOTER -->
 <footer>
-    © 2025 RBS Network Solutions | All Rights Reserved
+© 2025 RBS Network Solutions | All Rights Reserved
 </footer>
 
-<!-- JS -->
 <script>
 function toggleMenu() {
     document.getElementById("navbar").classList.toggle("active");
