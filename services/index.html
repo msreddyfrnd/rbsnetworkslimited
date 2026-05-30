@@ -1,8 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Our Services - RBS Networks</title>
+
+<title>CCTV, Networking & IT Services in Bangalore | RBS Network Solutions</title>
+
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ✅ SEO META -->
+<meta name="description" content="RBS Network Solutions provides CCTV installation, IT networking, telecom and security services in Bangalore. Reliable solutions for businesses and homes.">
+
+<meta name="keywords" content="CCTV installation Bangalore, network solutions Bangalore, IT services Bangalore, telecom solutions Bangalore">
+
+<meta name="author" content="RBS Network Solutions">
+
+<!-- ✅ OPEN GRAPH -->
+<meta property="og:title" content="RBS Network Solutions Services - CCTV & Networking Bangalore">
+<meta property="og:description" content="Professional CCTV, Security and Networking Services in Bangalore.">
+<meta property="og:type" content="website">
+
+<!-- ✅ SCHEMA -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "RBS Network Solutions",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Bangalore",
+   "addressCountry": "India"
+ },
+ "telephone": "+91-7892554609"
+}
+</script>
 
 <style>
 
@@ -23,6 +53,7 @@ body {
     box-shadow: 0 3px 10px rgba(0,0,0,0.08);
 }
 
+/* LOGO */
 .logo-section {
     display: flex;
     align-items: center;
@@ -68,10 +99,19 @@ nav a:hover {
 
 .services h2 {
     font-size: 32px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
-/* ✅ PERFECT ROW ALIGNMENT */
+/* ✅ ADD SEO TEXT */
+.services p {
+    max-width: 700px;
+    margin: auto;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* ✅ ROW ALIGNMENT */
 .services-container {
     display: flex;
     justify-content: center;
@@ -81,9 +121,9 @@ nav a:hover {
     margin: auto;
 }
 
-/* ✅ CARD */
+/* CARD */
 .card {
-    flex: 1;                /* ✅ equal size cards */
+    flex: 1;
     max-width: 320px;
     min-width: 260px;
     background: #fff;
@@ -98,7 +138,6 @@ nav a:hover {
     transform: translateY(-8px);
 }
 
-/* ✅ IMAGE */
 .card img {
     width: 100%;
     height: 180px;
@@ -120,6 +159,13 @@ nav a:hover {
     color: #00AEEF;
 }
 
+/* ✅ DESCRIPTION (SEO BOOST) */
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
 /* FOOTER */
 footer {
     text-align: center;
@@ -129,7 +175,7 @@ footer {
     margin-top: 40px;
 }
 
-/* ✅ MOBILE */
+/* MOBILE */
 @media (max-width: 900px) {
     .services-container {
         flex-wrap: wrap;
@@ -162,6 +208,7 @@ footer {
     <nav>
         <a href="/">Home</a>
         <a href="/about/">About</a>
+        <a href="/services/" class="active">Services</a>
         <a href="/clients/">Clients</a>
         <a href="/contact/">Contact</a>
     </nav>
@@ -170,23 +217,31 @@ footer {
 
 <!-- SERVICES -->
 <section class="services">
-    <h2>Our Services</h2>
+    <h2>Our Services in Bangalore</h2>
+
+    <!-- ✅ SEO TEXT -->
+    <p>
+        We provide professional CCTV installation, IT networking, telecom and security solutions in Bangalore for businesses, apartments and commercial spaces.
+    </p>
 
     <div class="services-container">
 
         <div class="card">
-            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=60">
+            <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=800&q=60" alt="IT network solutions Bangalore">
             <a href="/networking/">IT Network Solutions</a>
+            <p>Enterprise-grade network design, installation and support services in Bangalore.</p>
         </div>
         
         <div class="card">
-            <img src="/rbs_images/cctv_image.jpg" alt="cctv">
+            <img src="/rbs_images/cctv_image.jpg" alt="CCTV installation Bangalore">
             <a href="/cloud/">CCTV and Security</a>
+            <p>Advanced CCTV installation and surveillance systems for complete security.</p>
         </div>
 
         <div class="card">
-            <img src="/rbs_images/telephone_image.jpg" alt="Telephone">
+            <img src="/rbs_images/telephone_image.jpg" alt="Telecom solutions Bangalore">
             <a href="/security/">Telecom and Communication</a>
+            <p>Reliable telecom and communication infrastructure for businesses.</p>
         </div>
 
     </div>
