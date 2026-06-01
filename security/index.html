@@ -8,26 +8,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/security/" />
 
-<!-- ✅ FAVICON (FIXED POSITION ✅) -->
+<!-- FAVICON -->
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="shortcut icon" href="/favicon.ico">
 <link rel="manifest" href="/site.webmanifest">
 
-<!-- ✅ SEO META -->
+<!-- SEO -->
 <meta name="description" content="RBS Network Solutions provides telecom, VoIP, PBX systems, fiber optic cabling and wireless communication services in Bangalore. Reliable business communication solutions.">
 
 <meta name="keywords" content="telecom services Bangalore, VoIP Bangalore, PBX systems Bangalore, fiber optic cable Bangalore, wireless networking Bangalore">
 
 <meta name="author" content="RBS Network Solutions">
 
-<!-- ✅ OPEN GRAPH -->
+<!-- OPEN GRAPH -->
 <meta property="og:title" content="Telecom & Communication Services Bangalore">
 <meta property="og:description" content="VoIP, PBX, fiber optic and wireless communication solutions in Bangalore.">
 <meta property="og:type" content="website">
 
-<!-- ✅ SCHEMA -->
+<!-- SCHEMA -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -46,7 +46,7 @@
 
 <style>
 
-/* KEEP YOUR DESIGN */
+/* BODY */
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -77,23 +77,46 @@ header {
     font-size: 20px;
 }
 
-/* NAV */
+/* ✅ UPDATED NAV CTA */
 nav {
     margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 nav a {
-    margin-left: 20px;
     text-decoration: none;
-    color: #00AEEF;
+    padding: 10px 18px;
+    border-radius: 25px;
     font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
 }
 
-nav a:hover {
-    color: #007bb5;
+/* Secondary buttons */
+.nav-outline {
+    border: 2px solid #00AEEF;
+    color: #00AEEF;
 }
 
-/* ✅ HERO (NEW PROFESSIONAL SECTION) */
+.nav-outline:hover {
+    background: #00AEEF;
+    color: #fff;
+}
+
+/* Primary CTA */
+.nav-cta {
+    background: linear-gradient(135deg, #00AEEF, #007bb5);
+    color: white;
+    box-shadow: 0 4px 12px rgba(0,174,239,0.4);
+}
+
+.nav-cta:hover {
+    transform: translateY(-2px);
+}
+
+/* HERO */
 .hero {
     text-align: center;
     padding: 80px 20px;
@@ -130,7 +153,6 @@ nav a:hover {
 
 .service-text h2 {
     color: #1e293b;
-    margin-bottom: 15px;
 }
 
 .service-text p {
@@ -138,7 +160,6 @@ nav a:hover {
     line-height: 1.7;
 }
 
-/* IMAGE */
 .service-img {
     flex: 1;
     min-width: 300px;
@@ -190,23 +211,22 @@ footer {
   </div>
 
   <nav>
-    <a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
-   <a href="https://www.rbsnetworksolutionsblr.com/about/">About</a>
-   <a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-   <a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
-    <a href="https://www.rbsnetworksolutionsblr.com/services/">Back</a>
+    <a href="https://www.rbsnetworksolutionsblr.com/" class="nav-outline">Home</a>
+    <a href="https://www.rbsnetworksolutionsblr.com/about/" class="nav-outline">About</a>
+    <a href="https://www.rbsnetworksolutionsblr.com/clients/" class="nav-outline">Clients</a>
+    <a href="https://www.rbsnetworksolutionsblr.com/services/" class="nav-outline">Back</a>
+    <a href="https://www.rbsnetworksolutionsblr.com/contact/" class="nav-cta">Contact</a>
   </nav>
 </header>
 
-<!-- ✅ HERO -->
+<!-- HERO -->
 <section class="hero">
   <h1>Telecom & Communication Services in Bangalore</h1>
   <p>Advanced VoIP, PBX, Fiber Optic & Wireless Communication Solutions</p>
 </section>
 
-<!-- ✅ 1 -->
+<!-- SERVICES -->
 <section class="service-section">
-
   <div class="service-text">
     <h2>VoIP and PBX Systems</h2>
     <p>
@@ -216,18 +236,13 @@ footer {
   </div>
 
   <div class="service-img">
-    <img src="/rbs_images/voip_pbxsystems.png"
-         alt="VoIP PBX systems Bangalore">
+    <img src="/rbs_images/voip_pbxsystems.png" alt="VoIP PBX systems Bangalore">
   </div>
-
 </section>
 
-<!-- ✅ 2 -->
 <section class="service-section">
-
   <div class="service-img">
-    <img src="/rbs_images/data_fiber_optic.png"
-         alt="Fiber optic cable installation">
+    <img src="/rbs_images/data_fiber_optic.png" alt="Fiber optic cable installation">
   </div>
 
   <div class="service-text">
@@ -237,12 +252,9 @@ footer {
       reliable connectivity and scalable infrastructure.
     </p>
   </div>
-
 </section>
 
-<!-- ✅ 3 -->
 <section class="service-section">
-
   <div class="service-text">
     <h2>Wireless Communication</h2>
     <p>
@@ -252,19 +264,18 @@ footer {
   </div>
 
   <div class="service-img">
-    <img src="/rbs_images/wireless_image.png"
-         alt="Wireless communication Bangalore">
+    <img src="/rbs_images/wireless_image.png" alt="Wireless communication Bangalore">
   </div>
-
 </section>
 
-<!-- ✅ CTA -->
+<!-- CTA -->
 <section class="cta">
   <h2>Need Telecom Solutions in Bangalore?</h2>
   <p>Contact RBS Network Solutions for reliable business communication systems.</p>
   <a href="/contact/">Contact Us</a>
 </section>
 
+<!-- FOOTER -->
 <footer>
   <p>© 2025 RBS Network Solutions</p>
 </footer>
