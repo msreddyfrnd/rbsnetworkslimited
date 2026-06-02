@@ -23,6 +23,7 @@ body {
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -50,6 +51,7 @@ header {
     font-size: 20px;
 }
 
+/* NAV */
 nav {
     margin-left: auto;
     display: flex;
@@ -82,6 +84,7 @@ nav a:hover {
     background: #007bb5;
 }
 
+/* HERO */
 .hero {
     text-align: center;
     padding: 90px 20px;
@@ -95,6 +98,7 @@ nav a:hover {
     font-size: 42px;
 }
 
+/* SERVICES */
 .service-section {
     display: flex;
     align-items: center;
@@ -123,20 +127,33 @@ nav a:hover {
     line-height: 1.7;
 }
 
+/* IMAGE FIXES + EFFECTS */
 .service-img {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
 .service-img img {
     width: 100%;
-    height: 300px;
-    object-fit: cover;
+    max-height: 300px;
+    object-fit: contain; /* no crop */
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    background: #fff;
+    transition: transform 0.4s ease;
 }
 
+/* Zoom hover */
+.service-img:hover img {
+    transform: scale(1.08);
+}
+
+/* CTA */
 .cta {
     text-align: center;
     padding: 60px 20px;
@@ -194,13 +211,13 @@ footer {
     <p>We offer customized design and professional CCTV installation services in Bangalore, ensuring complete surveillance coverage.</p>
   </div>
   <div class="service-img">
-    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/installationservice_image.png">
+    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/installationservice_image.png" loading="lazy">
   </div>
 </section>
 
 <section class="service-section">
   <div class="service-img">
-    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/remote_monitoring.png">
+    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/remote_monitoring.png" loading="lazy">
   </div>
   <div class="service-text">
     <h2>Remote Monitoring</h2>
@@ -214,13 +231,13 @@ footer {
     <p>AMC support and upgrades for smooth system performance.</p>
   </div>
   <div class="service-img">
-    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/maintenance_upgrade.png">
+    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/maintenance_upgrade.png" loading="lazy">
   </div>
 </section>
 
 <section class="service-section">
   <div class="service-img">
-    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/types_cameras.png">
+    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/types_cameras.png" loading="lazy">
   </div>
   <div class="service-text">
     <h2>Types of Cameras</h2>
@@ -234,7 +251,7 @@ footer {
     <p>Biometric, RFID and smart entry solutions for enhanced security.</p>
   </div>
   <div class="service-img">
-    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/accesscontrol_system.png">
+    <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/accesscontrol_system.png" loading="lazy">
   </div>
 </section>
 
