@@ -9,15 +9,30 @@
 
 <link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/cloud/" />
 
-<!-- FAVICON -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-
 <!-- SEO -->
-<meta name="description" content="RBS Network Solutions provides CCTV installation, security systems, remote monitoring and access control solutions in Bangalore for homes and businesses.">
+<meta name="description" content="RBS Network Solutions provides CCTV installation, security systems, remote monitoring and access control solutions in Bangalore.">
+
+<!-- ✅ SEO Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "RBS Network Solutions",
+  "image": "https://www.rbsnetworksolutionsblr.com/rbs_images/rbs_logo.jpg",
+  "@id": "https://www.rbsnetworksolutionsblr.com",
+  "url": "https://www.rbsnetworksolutionsblr.com",
+  "telephone": "+91-XXXXXXXXXX",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bangalore",
+    "addressRegion": "Karnataka",
+    "addressCountry": "India"
+  },
+  "description": "CCTV installation, remote monitoring, and security systems"
+}
+</script>
 
 <style>
-
 body {
     margin: 0;
     font-family: "Segoe UI", Arial, sans-serif;
@@ -40,10 +55,7 @@ header {
     align-items: center;
 }
 
-.logo-img {
-    height: 42px;
-    margin-right: 10px;
-}
+.logo-img { height: 42px; margin-right: 10px; }
 
 .logo-text {
     color: #00AEEF;
@@ -55,10 +67,17 @@ header {
 nav {
     margin-left: auto;
     display: flex;
-    align-items: center;
     gap: 12px;
 }
 
+/* ✅ Mobile menu hidden */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Links */
 nav a {
     text-decoration: none;
     padding: 8px 16px;
@@ -70,19 +89,9 @@ nav a {
     transition: 0.3s ease;
 }
 
-nav a:hover {
-    background: #00AEEF;
-    color: white;
-}
+nav a:hover { background: #00AEEF; color: white; }
 
-.nav-primary {
-    background: #00AEEF;
-    color: white !important;
-}
-
-.nav-primary:hover {
-    background: #007bb5;
-}
+.nav-primary { background: #00AEEF; color: white !important; }
 
 /* HERO */
 .hero {
@@ -94,10 +103,6 @@ nav a:hover {
     color: white;
 }
 
-.hero h1 {
-    font-size: 42px;
-}
-
 /* SERVICES */
 .service-section {
     display: flex;
@@ -106,11 +111,19 @@ nav a:hover {
     gap: 40px;
     padding: 60px 40px;
     flex-wrap: wrap;
+
+    /* ✅ animation */
+    opacity: 0;
+    transform: translateY(60px);
+    transition: 0.8s ease;
 }
 
-.service-section:nth-of-type(even) {
-    background: #f1f5f9;
+.service-section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
+
+.service-section:nth-of-type(even) { background: #f1f5f9; }
 
 .service-text {
     flex: 1;
@@ -118,37 +131,29 @@ nav a:hover {
     max-width: 600px;
 }
 
-.service-text h2 {
-    color: #1e293b;
-}
+.service-text h2 { color: #1e293b; }
 
-.service-text p {
-    color: #555;
-    line-height: 1.7;
-}
+.service-text p { color: #555; line-height: 1.7; }
 
-/* IMAGE FIXES + EFFECTS */
 .service-img {
     flex: 1;
     min-width: 300px;
     max-width: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
 .service-img img {
     width: 100%;
     max-height: 300px;
-    object-fit: contain; /* no crop */
+    object-fit: contain;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-    background: #fff;
     transition: transform 0.4s ease;
 }
 
-/* Zoom hover */
+/* Hover zoom */
 .service-img:hover img {
     transform: scale(1.08);
 }
@@ -167,19 +172,35 @@ nav a:hover {
     border-radius: 30px;
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
-.cta a:hover {
-    background: #007bb5;
-}
-
+/* FOOTER */
 footer {
     text-align: center;
     padding: 18px;
     background: #f8fafc;
 }
 
+/* ✅ MOBILE RESPONSIVE */
+@media(max-width: 768px) {
+
+nav {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: white;
+    padding: 15px;
+    display: none;
+}
+
+nav.active { display: flex; }
+
+.menu-toggle { display: block; margin-left: auto; }
+
+header { padding: 12px 20px; }
+
+}
 </style>
 </head>
 
@@ -191,24 +212,28 @@ footer {
     <span class="logo-text">RBS Network Solutions</span>
   </div>
 
-  <nav>
-    <a href="https://www.rbsnetworksolutionsblr.com/" class="nav-primary">Home</a>
-    <a href="https://www.rbsnetworksolutionsblr.com/about/">About</a>
-    <a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-    <a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
-    <a href="https://www.rbsnetworksolutionsblr.com/services/">Back</a>
+  <!-- ✅ Hamburger -->
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+  <nav id="navMenu">
+    <a href="/" class="nav-primary">Home</a>
+    <a href="/about/">About</a>
+    <a href="/clients/">Clients</a>
+    <a href="/contact/">Contact</a>
+    <a href="/services/">Back</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1>CCTV Installation & Security Systems in Bangalore</h1>
-  <p>Advanced surveillance, monitoring & security solutions for homes and businesses</p>
+  <p>Advanced surveillance solutions</p>
 </section>
 
+<!-- Services -->
 <section class="service-section">
   <div class="service-text">
     <h2>Installation and Services</h2>
-    <p>We offer customized design and professional CCTV installation services in Bangalore, ensuring complete surveillance coverage.</p>
+    <p>Customized CCTV installation services.</p>
   </div>
   <div class="service-img">
     <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/installationservice_image.png" loading="lazy">
@@ -221,14 +246,14 @@ footer {
   </div>
   <div class="service-text">
     <h2>Remote Monitoring</h2>
-    <p>Access CCTV feeds anytime from mobile and desktop devices.</p>
+    <p>Access anytime from mobile.</p>
   </div>
 </section>
 
 <section class="service-section">
   <div class="service-text">
     <h2>Maintenance and Upgrades</h2>
-    <p>AMC support and upgrades for smooth system performance.</p>
+    <p>AMC support for smooth performance.</p>
   </div>
   <div class="service-img">
     <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/maintenance_upgrade.png" loading="lazy">
@@ -241,14 +266,14 @@ footer {
   </div>
   <div class="service-text">
     <h2>Types of Cameras</h2>
-    <p>IP cameras, PTZ cameras, thermal imaging and AI-powered systems.</p>
+    <p>IP, PTZ, thermal & AI cameras.</p>
   </div>
 </section>
 
 <section class="service-section">
   <div class="service-text">
     <h2>Access Control Systems</h2>
-    <p>Biometric, RFID and smart entry solutions for enhanced security.</p>
+    <p>Biometric & RFID solutions.</p>
   </div>
   <div class="service-img">
     <img src="https://www.rbsnetworksolutionsblr.com/rbs_images/accesscontrol_system.png" loading="lazy">
@@ -257,13 +282,32 @@ footer {
 
 <section class="cta">
   <h2>Looking for CCTV Installation in Bangalore?</h2>
-  <p>Contact RBS Network Solutions for reliable solutions.</p>
   <a href="/contact/">Get Free Quote</a>
 </section>
 
 <footer>
   <p>© 2025 RBS Network Solutions</p>
 </footer>
+
+<!-- ✅ JS -->
+<script>
+// Mobile menu
+function toggleMenu() {
+  document.getElementById("navMenu").classList.toggle("active");
+}
+
+// Scroll animation
+const sections = document.querySelectorAll(".service-section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
