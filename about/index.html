@@ -7,31 +7,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ GOOGLE VERIFICATION (optional if already added to homepage) -->
-<meta name="google-site-verification" content="googlef1c5627b26157128.html">
-
+<meta name="google-site-verification" content="googlef1c5627b26157128">
 <link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/about/" />
 
-<!-- ✅ FAVICON (FIXED POSITION ✅) -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="manifest" href="/site.webmanifest">
+<!-- SEO -->
+<meta name="description" content="About RBS Network Solutions - Leading CCTV installation, networking, telecom and IT services company in Bangalore covering Hebbal, Yelahanka, RT Nagar and nearby areas.">
 
-<!-- ✅ SEO META -->
-<meta name="description" content="Learn about RBS Network Solutions, a Bangalore-based company providing CCTV installation, IT networking, telecom and security services. Trusted technology partner.">
+<!-- Favicon -->
+<link rel="icon" href="/favicon.ico">
 
-<meta name="keywords" content="About RBS Network Solutions, CCTV company Bangalore, networking company Bangalore, IT solutions Bangalore">
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<meta name="author" content="RBS Network Solutions">
-
-<!-- ✅ OPEN GRAPH -->
-<meta property="og:title" content="About RBS Network Solutions - CCTV & Networking Experts in Bangalore">
-<meta property="og:description" content="Trusted provider of CCTV installation, networking and telecom services in Bangalore.">
-<meta property="og:type" content="website">
-
-<!-- ✅ SCHEMA -->
+<!-- Schema -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -41,7 +30,6 @@
  "address": {
    "@type": "PostalAddress",
    "addressLocality": "Bangalore",
-   "postalCode": "560094",
    "addressCountry": "India"
  },
  "contactPoint": {
@@ -53,282 +41,214 @@
 </script>
 
 <style>
-
-/* ✅ KEEP YOUR ORIGINAL DESIGN */
 body {
     margin: 0;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     background: #f5f7fa;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
 }
 
 /* HEADER */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    padding: 15px 40px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    padding:15px 40px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.07);
 }
 
 .logo-section {
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-items:center;
 }
 
-.logo-img {
-    width: 50px;
-    margin-right: 10px;
-}
+.logo-img { width:50px; margin-right:10px; }
 
 .logo-text {
-    color: #00AEEF;
-    font-size: 22px;
-    font-weight: bold;
+    color:#00AEEF;
+    font-weight:700;
+    font-size:22px;
 }
 
-/* NAV */
 nav {
-    display: flex;
-    gap: 12px;
+    display:flex;
+    gap:12px;
 }
 
 nav a {
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 10px 20px;
-    border-radius: 30px;
-    background: #00AEEF;
-    color: white;
-    transition: 0.3s;
+    text-decoration:none;
+    padding:10px 20px;
+    border-radius:30px;
+    background:#00AEEF;
+    color:#fff;
+    font-size:14px;
 }
 
-nav a:hover {
-    background: #007bb5;
-}
-
-/* ✅ ACTIVE PAGE */
-nav a.active {
-    outline: 2px solid #005f8f;
-}
+nav a:hover { background:#007bb5; }
 
 /* HERO */
 .about-hero {
-    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 90px 20px;
+    background-size:cover;
+    color:white;
+    text-align:center;
+    padding:100px 20px;
 }
 
-.about-hero h1 {
-    font-size: 42px;
-}
+.about-hero h1 { font-size:42px; }
 
 /* CONTENT */
+.container { max-width:1100px; margin:auto; }
+
 .about-company {
-    padding: 60px 20px;
+    padding:60px 20px;
 }
 
-/* BLOCKS */
 .about-block {
-    background: #ffffff;
-    padding: 30px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    transition: 0.3s;
+    background:#fff;
+    padding:30px;
+    margin-bottom:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
 }
 
 .about-block:hover {
-    transform: translateY(-5px);
+    transform:translateY(-5px);
 }
 
-.about-block h2 {
-    color: #00AEEF;
-}
+.about-block h2 { color:#00AEEF; }
 
-.about-block p {
-    line-height: 1.7;
-    color: #444;
-}
-
-.about-block ul {
-    padding-left: 20px;
-}
-
-/* VALUES */
-.values-grid {
-    display: grid;
+/* GRID */
+.grid {
+    display:grid;
+    gap:20px;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 20px;
 }
 
-.value-card {
-    background: #eef7fc;
-    padding: 20px;
-    border-radius: 10px;
+.card {
+    background:#eef7fc;
+    padding:20px;
+    border-radius:10px;
 }
 
 /* HIGHLIGHTS */
-.highlights {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
-    gap: 20px;
-}
-
 .highlight-card {
-    background: #00AEEF;
-    color: white;
-    padding: 25px;
-    border-radius: 10px;
-    text-align: center;
+    background:#00AEEF;
+    color:#fff;
+    padding:25px;
+    border-radius:10px;
+    text-align:center;
 }
 
 /* CTA */
 .cta {
-    background: #0a2540;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
+    background:#0a2540;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
 }
 
 .cta a {
-    display: inline-block;
-    margin-top: 15px;
-    background: #00AEEF;
-    color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
+    display:inline-block;
+    margin-top:15px;
+    background:#00AEEF;
+    padding:12px 25px;
+    border-radius:30px;
+    color:#fff;
+    text-decoration:none;
 }
 
-.cta a:hover {
-    background: #007bb5;
+/* FAQ */
+.faq p {
+    margin-bottom:15px;
 }
 
 /* FOOTER */
 footer {
-    background: #111;
-    color: white;
-    text-align: center;
-    padding: 15px;
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
 }
-
-/* MOBILE */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    nav {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
 </style>
+
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header>
-  <div class="logo-section">
-      <img src="/rbs_images/rbs_logo.jpg" class="logo-img">
-      <span class="logo-text">RBS Network Solutions</span>
-  </div>
+<div class="logo-section">
+<img src="/rbs_images/rbs_logo.jpg" class="logo-img" alt="RBS Logo">
+<span class="logo-text">RBS Network Solutions</span>
+</div>
 
-  <nav>
-  <a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
- <a href="https://www.rbsnetworksolutionsblr.com/services/">Services</a>
- <a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
- <a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
-  </nav>
+<nav>
+<a href="/">Home</a>
+<a href="/services/">Services</a>
+<a href="/clients/">Clients</a>
+<a href="/contact/">Contact</a>
+</nav>
 </header>
 
-<!-- HERO -->
 <section class="about-hero">
-  <h1>About RBS Network Solutions in Bangalore</h1>
-  <p>Delivering Reliable, Secure & Scalable CCTV & Networking Solutions</p>
+<h1>About RBS Network Solutions in Bangalore</h1>
+<p>Reliable CCTV, Networking & IT Infrastructure Experts</p>
 </section>
 
-<!-- CONTENT (UNCHANGED) -->
 <section class="about-company">
 <div class="container">
 
-  <div class="about-block">
-    <h2>Who We Are</h2>
-    <p><strong>RBS NETWORK SOLUTIONS</strong></p>
-    <p>Established in 2025 | Bangalore, India</p>
-    <p>
-      RBS Networks is a modern CCTV and Network Solutions company focused on delivering
-      high-performance infrastructure and security services in Bangalore.
-    </p>
-  </div>
+<div class="about-block">
+<h2>Who We Are</h2>
+<p><strong>RBS Network Solutions</strong> is a Bangalore-based company providing CCTV installation, networking, and telecom services with a focus on reliability and security.</p>
+</div>
 
-  <div class="about-block">
-    <h2>Our Mission & Vision</h2>
-    <p><strong>Mission:</strong> To deliver reliable, secure, and scalable CCTV and security solutions.</p>
-    <p><strong>Vision:</strong> To become a trusted technology partner across India.</p>
-  </div>
+<div class="about-block">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">📹 CCTV Installation</div>
+<div class="card">🌐 LAN Networking</div>
+<div class="card">📡 Telecom Solutions</div>
+<div class="card">💻 IT Infrastructure</div>
+</div>
+</div>
 
-  <div class="about-block">
-    <h2>What We Do</h2>
-    <ul>
-      <li><strong>Network Infrastructure</strong> – Enterprise-grade network deployment</li>
-      <li><strong>CCTV & Security</strong> – Advanced surveillance solutions</li>
-      <li><strong>Telecom & Communication</strong> – Reliable communication systems</li>
-    </ul>
-  </div>
+<div class="about-block">
+<h2>Service Areas</h2>
+<p>CCTV Installation in Hebbal, Yelahanka, RT Nagar, and across Bangalore.</p>
+</div>
 
-  <div class="about-block">
-    <h2>Why Choose Us</h2>
-    <ul>
-      <li>✔ Reliability – 24/7 uptime solutions</li>
-      <li>✔ Security – Advanced protection</li>
-      <li>✔ Scalability – Growth-ready systems</li>
-      <li>✔ Expert Support – Skilled team</li>
-    </ul>
-  </div>
+<div class="about-block">
+<h2>Why Choose Us</h2>
+<ul>
+<li>✔ 24/7 Support</li>
+<li>✔ Reliable Solutions</li>
+<li>✔ Expert Team</li>
+<li>✔ Affordable Pricing</li>
+</ul>
+</div>
 
-  <div class="about-block">
-    <h2>Our Core Values</h2>
-    <div class="values-grid">
-      <div class="value-card">Integrity & Transparency</div>
-      <div class="value-card">Customer First</div>
-      <div class="value-card">Innovation</div>
-      <div class="value-card">Excellence</div>
-    </div>
-  </div>
-
-  <div class="highlights">
-    <div class="highlight-card"><h3>100%</h3><p>Customer Satisfaction</p></div>
-    <div class="highlight-card"><h3>24/7</h3><p>Support</p></div>
-    <div class="highlight-card"><h3>2025</h3><p>Established</p></div>
-  </div>
+<div class="about-block">
+<h2>FAQ</h2>
+<div class="faq">
+<p><strong>What services do you provide?</strong><br>CCTV, networking, telecom and IT solutions.</p>
+<p><strong>Which areas do you serve?</strong><br>All major locations in Bangalore.</p>
+</div>
+</div>
 
 </div>
 </section>
 
-<!-- CTA -->
 <section class="cta">
-  <h2>Ready to Work With Us?</h2>
-  <p>Let’s build secure and scalable systems together.</p>
-  <a href="/contact/">Contact Us</a>
+<h2>Need CCTV Installation in Bangalore?</h2>
+<p>Contact us today for professional service.</p>
+<a href="/contact/">Contact Now</a>
 </section>
 
 <footer>
-  © 2025 RBS Networks. All Rights Reserved.
+© 2025 RBS Network Solutions
 </footer>
 
 </body>
