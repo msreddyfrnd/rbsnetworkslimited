@@ -7,149 +7,205 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- ✅ GOOGLE VERIFICATION -->
 <meta name="google-site-verification" content="googlef1c5627b26157128">
-
-<!-- ✅ CANONICAL -->
 <link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/" />
-
-<!-- ✅ ROBOTS -->
 <meta name="robots" content="index, follow">
 
-<!-- ✅ ✅ FIXED FAVICON (CRITICAL FOR GOOGLE) -->
-<link rel="icon" type="image/png" sizes="96x96" href="https://www.rbsnetworksolutionsblr.com/favicon-96x96.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.rbsnetworksolutionsblr.com/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.rbsnetworksolutionsblr.com/favicon-16x16.png">
-<link rel="shortcut icon" href="https://www.rbsnetworksolutionsblr.com/favicon.ico">
-<link rel="apple-touch-icon" href="https://www.rbsnetworksolutionsblr.com/apple-touch-icon.png">
+<!-- Favicon -->
+<link rel="icon" sizes="32x32" href="https://www.rbsnetworksolutionsblr.com/favicon-32x32.png">
 
-<!-- ✅ SEO -->
+<!-- SEO -->
 <meta name="description" content="RBS Network Solutions provides CCTV installation, networking, telecom and IT infrastructure services in Bangalore. Reliable & secure business solutions.">
-<meta name="keywords" content="CCTV installation Bangalore, network solutions Bangalore, IT support Bangalore, telecom services Bangalore, security systems Bangalore">
-<meta name="author" content="RBS Network Solutions">
 
-<!-- ✅ OPEN GRAPH (Updated with image) -->
+<!-- Open Graph -->
 <meta property="og:title" content="RBS Network Solutions - CCTV & Networking Experts in Bangalore">
-<meta property="og:description" content="Professional CCTV, Security and Network Solutions in Bangalore.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://www.rbsnetworksolutionsblr.com/">
 <meta property="og:image" content="https://www.rbsnetworksolutionsblr.com/favicon-96x96.png">
 
-<!-- ✅ ✅ STRUCTURED DATA (FIXED WITH LOGO) -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "RBS Network Solutions",
- "url": "https://www.rbsnetworksolutionsblr.com/",
- "image": "https://www.rbsnetworksolutionsblr.com/favicon-96x96.png",
- "logo": "https://www.rbsnetworksolutionsblr.com/favicon-96x96.png",
- "telephone": "+91-9353961667",
- "areaServed": "Bangalore",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Bangalore",
-   "addressCountry": "India"
- }
-}
-</script>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
-body { margin: 0; font-family: "Segoe UI", Arial, sans-serif; }
 
-header {
-    background: #ffffff;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:#f8fbff;
+    color:#222;
 }
 
-header.shrink { padding: 5px 0; }
+/* HEADER */
+header {
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.9);
+    backdrop-filter: blur(10px);
+    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+}
 
-.container { max-width: 1200px; margin: auto; padding: 0 20px; }
+.container {
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
+}
 
 .header-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 0;
 }
 
-.logo-section { display: flex; align-items: center; gap: 10px; }
+.logo-section {
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
 
-.logo-img { height: 42px; }
+.logo-img { height:42px; }
 
-.logo-text { color: #00AEEF; font-size: 22px; font-weight: bold; }
+.logo-text { font-weight:700; color:#00AEEF; font-size:22px; }
 
-nav { display: flex; gap: 10px; }
+/* NAV */
+nav {
+    display:flex;
+    gap:10px;
+}
 
 nav a {
-    background: #00AEEF;
-    color: white;
-    padding: 10px 18px;
-    border-radius: 30px;
-    text-decoration: none;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:30px;
+    background:#00AEEF;
+    color:#fff;
+    transition:.3s;
 }
 
-nav a:hover { background: #007bb5; }
+nav a:hover { background:#007bb5; }
 
-nav a.contact-btn { background: #007bb5; }
+.menu-toggle { display:none; font-size:26px; cursor:pointer; }
 
-.menu-toggle { display: none; font-size: 28px; cursor: pointer; }
-
+/* HERO */
 .hero {
-    background: linear-gradient(rgba(10,37,64,0.8), rgba(0,123,255,0.8)),
-                url('https://images.unsplash.com/photo-1526378722484-cc5c5106a86e');
-    background-size: cover;
-    color: white;
-    text-align: center;
-    padding: 110px 20px;
+    background:linear-gradient(rgba(10,37,64,0.8), rgba(0,123,255,0.8)),
+    url('https://images.unsplash.com/photo-1526378722484-cc5c5106a86e');
+    background-size:cover;
+    color:#fff;
+    text-align:center;
+    padding:130px 20px;
 }
 
-.hero h1 { font-size: 44px; }
+.hero h1 {
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.hero p { font-size:18px; }
 
 .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 14px 30px;
-    background: #00AEEF;
-    color: white;
-    border-radius: 30px;
-    text-decoration: none;
+    display:inline-block;
+    padding:14px 28px;
+    margin-top:20px;
+    background:#00AEEF;
+    color:#fff;
+    border-radius:30px;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.section { padding: 70px 20px; text-align: center; }
+.btn:hover {
+    background:#007bb5;
+    transform:scale(1.05);
+}
 
-.stats { display: flex; justify-content: center; gap: 30px; flex-wrap: wrap; }
+/* SECTION */
+.section {
+    padding:70px 20px;
+    text-align:center;
+}
+
+.section h2 { margin-bottom:20px; }
+
+/* SERVICE CARDS */
+.grid {
+    display:grid;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+}
+
+.card {
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:.3s;
+}
+
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* STATS */
+.stats {
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
 
 .stat-box {
-    background: white;
-    padding: 25px;
-    border-radius: 10px;
-    width: 180px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    width:180px;
 }
 
+/* CTA */
+.cta {
+    background:#0a2540;
+    color:#fff;
+    padding:60px 20px;
+}
+
+.cta h2 { margin-bottom:15px; }
+
+/* FOOTER */
 footer {
-    background: #0a2540;
-    color: white;
-    text-align: center;
-    padding: 20px;
+    background:#041220;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
-@media (max-width: 768px) {
-    .menu-toggle { display: block; }
-    nav { display: none; flex-direction: column; width: 100%; }
-    nav.active { display: flex; }
+/* WHATSAPP FLOAT */
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:14px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
 }
+
+/* MOBILE */
+@media(max-width:768px){
+    nav { display:none; flex-direction:column; }
+    nav.active { display:flex; }
+    .menu-toggle { display:block; }
+}
+
 </style>
 
 </head>
 
 <body>
 
-<header id="header">
+<header>
 <div class="container header-inner">
 
 <div class="logo-section">
@@ -160,63 +216,72 @@ footer {
 <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
 <nav id="navbar">
-<a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
-<a href="https://www.rbsnetworksolutionsblr.com/about/">About</a>
-<a href="https://www.rbsnetworksolutionsblr.com/services/">Services</a>
-<a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-<a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
+<a href="/">Home</a>
+<a href="/about/">About</a>
+<a href="/services/">Services</a>
+<a href="/clients/">Clients</a>
+<a href="/contact/">Contact</a>
 </nav>
 
 </div>
 </header>
 
+<!-- HERO -->
+<section class="hero">
+<h1>CCTV Installation & Network Solutions</h1>
+<p>Professional IT Infrastructure, Security & Telecom Services in Bangalore</p>
+<a class="btn" href="/services/">Explore Services</a>
+</section>
+
+<!-- INTRO -->
 <section class="section">
-<h1>CCTV - Network - FTTH Systems in Bangalore</h1>
-
+<h2>CCTV - Network - FTTH Systems in Bangalore</h2>
 <p>
-Looking for CCTV installation & network technicians near Kalpana Chawla Road, Bhoopasandra? 
-RBS Network Solutions provides expert CCTV, LAN networking, and telecom services across Bangalore.
+Looking for CCTV installation & network technicians near Kalpana Chawla Road, Bhoopasandra?
+We provide expert CCTV, LAN networking, and telecom services across Bangalore.
 </p>
-
 <p><strong>Call us: +91 7892554609, 9353961667</strong></p>
 </section>
 
-<section class="hero">
-<div class="container">
-<h1>CCTV Installation & Network Solutions in Bangalore</h1>
-<p>Professional IT Infrastructure, Security, Telecom & Networking Services in Bangalore</p>
-<a class="btn" href="/services/">Explore Services</a>
+<!-- SERVICES -->
+<section class="section">
+<h2>Our Services</h2>
+<div class="grid">
+<div class="card">📹 CCTV Installation</div>
+<div class="card">🌐 Network Setup</div>
+<div class="card">📡 Telecom Services</div>
+<div class="card">💻 IT Infrastructure</div>
 </div>
 </section>
 
+<!-- STATS -->
 <section class="section">
 <h2>Why Choose Us</h2>
-
 <div class="stats">
 <div class="stat-box"><h2>150+</h2><p>Projects</p></div>
 <div class="stat-box"><h2>80+</h2><p>Clients</p></div>
 <div class="stat-box"><h2>15+</h2><p>Years Experience</p></div>
 </div>
+</section>
 
+<!-- CTA -->
+<section class="cta">
+<h2>Need CCTV or Network Installation?</h2>
+<p>Get professional service from Bangalore experts today.</p>
+<a class="btn" href="/contact/">Contact Now</a>
 </section>
 
 <footer>
 © 2025 RBS Network Solutions | All Rights Reserved
 </footer>
 
+<!-- WhatsApp -->
+<a class="whatsapp" href="https://wa.me/919353961667">WhatsApp</a>
+
 <script>
 function toggleMenu() {
     document.getElementById("navbar").classList.toggle("active");
 }
-
-window.addEventListener("scroll", function() {
-    const header = document.getElementById("header");
-    if (window.scrollY > 50) {
-        header.classList.add("shrink");
-    } else {
-        header.classList.remove("shrink");
-    }
-});
 </script>
 
 </body>
