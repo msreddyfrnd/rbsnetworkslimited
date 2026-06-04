@@ -2,171 +2,148 @@
 <html lang="en">
 <head>
 
-<title>About RBS Network Solutions | CCTV & IT Services in Bangalore</title>
+<title>CCTV Installation in Bangalore | RBS Network Solutions</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification" content="googlef1c5627b26157128">
-<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/about/" />
+<meta name="description" content="Best CCTV installation in Bangalore. RBS Network Solutions offers CCTV, LAN networking, telecom & IT services in Hebbal, Yelahanka, RT Nagar.">
 
-<!-- SEO -->
-<meta name="description" content="About RBS Network Solutions - Leading CCTV installation, networking, telecom and IT services company in Bangalore covering Hebbal, Yelahanka, RT Nagar and nearby areas.">
-
-<!-- Favicon -->
+<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/about/">
 <link rel="icon" href="/favicon.ico">
 
-<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- Schema -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "Organization",
- "name": "RBS Network Solutions",
- "url": "https://www.rbsnetworksolutionsblr.com",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Bangalore",
-   "addressCountry": "India"
- },
- "contactPoint": {
-   "@type": "ContactPoint",
-   "telephone": "+91-7892554609",
-   "contactType": "customer service"
- }
-}
-</script>
-
 <style>
+:root{
+  --primary:#00AEEF;
+  --dark:#0a2540;
+  --bg:#f5f7fa;
+  --text:#000;
+}
+
+/* DARK MODE */
+body.dark {
+  --bg:#121212;
+  --text:#fff;
+  background:#121212;
+}
+
 body {
-    margin: 0;
-    font-family: 'Poppins', sans-serif;
-    background: #f5f7fa;
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    background:var(--bg);
+    color:var(--text);
 }
 
 /* HEADER */
-header {
+header{
     display:flex;
     justify-content:space-between;
     align-items:center;
     background:#fff;
     padding:15px 40px;
-    box-shadow:0 3px 10px rgba(0,0,0,0.07);
 }
 
-.logo-section {
+.logo-section{
     display:flex;
     align-items:center;
 }
 
-.logo-img { width:50px; margin-right:10px; }
+.logo-img{ width:50px; margin-right:10px; }
 
-.logo-text {
-    color:#00AEEF;
+.logo-text{
+    color:var(--primary);
     font-weight:700;
-    font-size:22px;
 }
 
-nav {
-    display:flex;
-    gap:12px;
-}
-
-nav a {
+nav a{
     text-decoration:none;
-    padding:10px 20px;
-    border-radius:30px;
-    background:#00AEEF;
+    padding:10px 15px;
+    border-radius:20px;
+    background:var(--primary);
     color:#fff;
     font-size:14px;
 }
 
-nav a:hover { background:#007bb5; }
-
 /* HERO */
-.about-hero {
-    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+.about-hero{
+    background:linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
     url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31');
     background-size:cover;
-    color:white;
+    color:#fff;
     text-align:center;
     padding:100px 20px;
 }
 
-.about-hero h1 { font-size:42px; }
-
 /* CONTENT */
-.container { max-width:1100px; margin:auto; }
+.container{ max-width:1100px; margin:auto; }
 
-.about-company {
-    padding:60px 20px;
-}
+.about-company{ padding:60px 20px; }
 
-.about-block {
+.about-block{
     background:#fff;
-    padding:30px;
-    margin-bottom:30px;
-    border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    transition:.3s;
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
 }
 
-.about-block:hover {
-    transform:translateY(-5px);
-}
-
-.about-block h2 { color:#00AEEF; }
-
-/* GRID */
-.grid {
+.grid{
     display:grid;
-    gap:20px;
+    gap:15px;
     grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
 }
 
-.card {
-    background:#eef7fc;
-    padding:20px;
-    border-radius:10px;
-}
-
-/* HIGHLIGHTS */
-.highlight-card {
-    background:#00AEEF;
-    color:#fff;
-    padding:25px;
-    border-radius:10px;
-    text-align:center;
-}
-
 /* CTA */
-.cta {
-    background:#0a2540;
-    color:white;
+.cta{
+    background:var(--dark);
+    color:#fff;
     text-align:center;
     padding:50px 20px;
 }
 
-.cta a {
-    display:inline-block;
-    margin-top:15px;
-    background:#00AEEF;
-    padding:12px 25px;
-    border-radius:30px;
+/* FORM */
+form input, form textarea{
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+form button{
+    background:var(--primary);
     color:#fff;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    padding:12px 15px;
+    border-radius:50%;
+    font-size:22px;
     text-decoration:none;
 }
 
-/* FAQ */
-.faq p {
-    margin-bottom:15px;
+/* DARK SWITCH */
+.toggle{
+    cursor:pointer;
+    background:#000;
+    color:#fff;
+    padding:5px 10px;
+    border-radius:10px;
 }
 
 /* FOOTER */
-footer {
+footer{
     background:#111;
     color:white;
     text-align:center;
@@ -180,81 +157,82 @@ footer {
 
 <header>
 <div class="logo-section">
-<img src="/rbs_images/rbs_logo.jpg" class="logo-img" alt="RBS Logo">
+<img src="/rbs_images/rbs_logo.jpg" class="logo-img">
 <span class="logo-text">RBS Network Solutions</span>
 </div>
 
 <nav>
 <a href="/">Home</a>
 <a href="/services/">Services</a>
-<a href="/clients/">Clients</a>
 <a href="/contact/">Contact</a>
+<span class="toggle" onclick="toggleDark()">🌙</span>
 </nav>
 </header>
 
 <section class="about-hero">
-<h1>About RBS Network Solutions in Bangalore</h1>
-<p>Reliable CCTV, Networking & IT Infrastructure Experts</p>
+<h1>CCTV Installation in Bangalore</h1>
+<p>Reliable Security & Networking Experts</p>
 </section>
 
 <section class="about-company">
 <div class="container">
 
 <div class="about-block">
-<h2>Who We Are</h2>
-<p><strong>RBS Network Solutions</strong> is a Bangalore-based company providing CCTV installation, networking, and telecom services with a focus on reliability and security.</p>
+<h2>About Us</h2>
+<p>RBS Network Solutions provides professional CCTV installation, LAN networking, telecom, and IT solutions across Bangalore including Hebbal, Yelahanka, and RT Nagar.</p>
 </div>
 
 <div class="about-block">
-<h2>Our Services</h2>
+<h2>Services</h2>
 <div class="grid">
-<a href="https://www.rbsnetworksolutionsblr.com/cloud/">
-<div class="card">📹 CCTV Installation</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/networking/">
-<div class="card">🌐 LAN Networking</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/security/">
-<div class="card">📡 Telecom Solutions</div>
-</a>
+<div>📹 CCTV Installation</div>
+<div>🌐 Networking</div>
+<div>📡 Telecom</div>
 </div>
-</div>
-
-<div class="about-block">
-<h2>Service Areas</h2>
-<p>CCTV Installation in Hebbal, Yelahanka, RT Nagar, and across Bangalore.</p>
 </div>
 
 <div class="about-block">
 <h2>Why Choose Us</h2>
 <ul>
-<li>✔ 24/7 Support</li>
-<li>✔ Reliable Solutions</li>
-<li>✔ Expert Team</li>
+<li>✔ Expert Engineers</li>
 <li>✔ Affordable Pricing</li>
+<li>✔ 24/7 Support</li>
 </ul>
 </div>
 
+<!-- ✅ LEAD FORM -->
 <div class="about-block">
-<h2>FAQ</h2>
-<div class="faq">
-<p><strong>What services do you provide?</strong><br>CCTV, networking, telecom and IT solutions.</p>
-<p><strong>Which areas do you serve?</strong><br>All major locations in Bangalore.</p>
-</div>
+<h2>Get Free Quote</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="tel" placeholder="Phone Number" required>
+<textarea placeholder="Your Requirement"></textarea>
+<button type="submit">Submit</button>
+</form>
 </div>
 
 </div>
 </section>
 
 <section class="cta">
-<h2>Need CCTV Installation in Bangalore?</h2>
-<p>Contact us today for professional service.</p>
-<a href="/contact/">Contact Now</a>
+<h2>Need CCTV Installation?</h2>
+<p>Contact us today for fast service in Bangalore</p>
+<a href="/contact/" style="color:#fff;">Contact Now</a>
 </section>
+
+<!-- ✅ WHATSAPP -->
+<a href="https://wa.me/917892554609" class="whatsapp">💬</a>
 
 <footer>
 © 2025 RBS Network Solutions
 </footer>
+
+<!-- DARK MODE SCRIPT -->
+<script>
+function toggleDark(){
+ document.body.classList.toggle("dark");
+}
+</script>
 
 </body>
 </html>
