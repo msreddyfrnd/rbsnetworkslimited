@@ -2,19 +2,14 @@
 <html lang="en">
 <head>
 
-<title>Contact RBS Network Solutions | CCTV & Networking Services Bangalore</title>
+<title>Contact RBS Network Solutions</title>
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/contact/"/>
+<!-- RECAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
-<!-- FAVICON -->
-<link rel="icon" href="/favicon.ico">
-
-<meta name="description" content="Contact RBS Network Solutions in Bangalore for CCTV installation, networking, telecom and IT services.">
-
-<!-- STYLES -->
 <style>
 
 /* GENERAL */
@@ -36,121 +31,146 @@ header {
  align-items:center;
 }
 
+/* NAV */
 nav a{
  margin:0 10px;
  text-decoration:none;
  color:#000;
  font-size:13px;
 }
+nav a.active{font-weight:bold}
 
-nav a.active{
- font-weight:bold;
-}
-
-/* CONTACT SECTION */
-.contact-wrapper {
+/* CONTACT */
+.contact-wrapper{
   text-align:center;
   padding:40px 20px;
 }
 
-.contact-wrapper h1{
-  margin-bottom:10px;
-}
-
-/* GRID */
 .contact-container{
-  display:flex;
-  justify-content:center;
-  gap:50px;
-  margin-top:30px;
-  flex-wrap:wrap;
+ display:flex;
+ justify-content:center;
+ gap:50px;
+ margin-top:30px;
+ flex-wrap:wrap;
 }
 
-/* LEFT FORM */
+/* FORM */
 .contact-form{
-  width:400px;
-  text-align:left;
+ width:400px;
+ text-align:left;
 }
 
 .contact-form input,
 .contact-form textarea{
-  width:100%;
-  padding:12px;
-  margin-bottom:12px;
-  border:none;
-  background:#cfd8e3;
+ width:100%;
+ padding:12px;
+ margin-bottom:12px;
+ border:none;
+ background:#cfd8e3;
+ transition:0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+ background:#ffffff;
+ outline:2px solid #00AEEF;
 }
 
 .contact-form button{
-  width:100%;
-  padding:14px;
-  border:none;
-  background:#111;
-  color:#fff;
-  border-radius:25px;
-  cursor:pointer;
+ width:100%;
+ padding:14px;
+ border:none;
+ background:#111;
+ color:#fff;
+ border-radius:25px;
+ cursor:pointer;
+ transition:0.3s;
+}
+.contact-form button:hover{
+ background:#00AEEF;
 }
 
-/* RIGHT INFO */
+/* INFO */
 .contact-info{
-  width:400px;
-  text-align:left;
+ width:400px;
+ text-align:left;
 }
 
+/* WHATSAPP BUTTON */
 .whatsapp-btn{
-  display:inline-block;
-  background:#25D366;
-  color:#fff;
-  padding:10px 18px;
-  border-radius:25px;
-  text-decoration:none;
-  margin:10px 0;
+ display:inline-block;
+ background:#25D366;
+ color:#fff;
+ padding:10px 18px;
+ border-radius:25px;
+ text-decoration:none;
 }
 
 /* MAP */
-.map-section{
- margin-top:40px;
-}
-
 iframe{
  width:100%;
  height:400px;
  border:0;
 }
 
-/* MOBILE */
+/* FLOATING WHATSAPP */
+.float-wa{
+ position:fixed;
+ bottom:80px;
+ right:20px;
+ background:#25D366;
+ color:white;
+ padding:14px;
+ border-radius:50%;
+ font-size:20px;
+ text-decoration:none;
+ box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* STICKY CALL BUTTON (MOBILE) */
+.call-btn{
+ display:none;
+}
+
 @media(max-width:768px){
-  .contact-container{
-    flex-direction:column;
-    align-items:center;
-  }
+ .contact-container{
+  flex-direction:column;
+  align-items:center;
+ }
+
+ .call-btn{
+  display:block;
+  position:fixed;
+  bottom:0;
+  width:100%;
+  background:#00AEEF;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  font-size:18px;
+  text-decoration:none;
+ }
 }
 
 </style>
-
 </head>
 
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="header-inner">
+<div class="header-inner">
 
-    <div>
-      <img src="/rbs_images/rbs_logo.jpg" height="40">
-    </div>
+<div><b>RBS Network Solutions</b></div>
 
-    <nav>
-      <a href="/">HOME</a>
-      <a href="/about/">ABOUT US</a>
-      <a href="/services/">SERVICES</a>
-      <a href="#">PROJECTS</a>
-      <a href="#">PHOTO GALLERY</a>
-      <a href="#">BUSINESS PARTNERS</a>
-      <a class="active" href="/contact/">CONTACT</a>
-    </nav>
+<nav>
+<a href="/">HOME</a>
+<a href="/about/">ABOUT</a>
+<a href="/services/">SERVICES</a>
+<a href="/contact/" class="active">CONTACT</a>
+</nav>
 
-  </div>
+</div>
 </header>
 
 <!-- CONTACT -->
@@ -162,7 +182,6 @@ iframe{
 
 <!-- FORM -->
 <div class="contact-form">
-
 <p>Drop us a Query</p>
 
 <form id="contact-form">
@@ -173,20 +192,22 @@ iframe{
 
 <textarea name="message" placeholder="Message" rows="5" required></textarea>
 
+<!-- RECAPTCHA -->
+<div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
+
 <button type="submit">SEND</button>
 
 </form>
-
 </div>
 
 <!-- INFO -->
 <div class="contact-info">
 
-<p>We love our customers, so feel free to visit during normal business hours.</p>
+<p>We love our customers, feel free to visit during business hours.</p>
 
 <a class="whatsapp-btn" href="https://wa.me/917892554609" target="_blank">WhatsApp</a>
 
-<h3>R B S NETWORK SOLUTIONS</h3>
+<h3>RBS NETWORK SOLUTIONS</h3>
 
 <p>
 Shaheena Building, Boopasandra<br>
@@ -197,7 +218,7 @@ Bangalore - 560094
 <p>✉ rbsnetworks2025@gmail.com</p>
 
 <h4>Hours</h4>
-<p>Open today 09:30 am – 06:00 pm</p>
+<p>09:30 am – 06:00 pm</p>
 
 </div>
 
@@ -206,13 +227,13 @@ Bangalore - 560094
 </section>
 
 <!-- MAP -->
-<div class="map-section">
+<iframe src="https://www.google.com/maps?q=Boopasandra+Bangalore&output=embed"></iframe>
 
-<iframe
-src="https://www.google.com/maps?q=Boopasandra+Bangalore&output=embed">
-</iframe>
+<!-- FLOAT WHATSAPP -->
+<a href="https://wa.me/917892554609" class="float-wa" target="_blank">💬</a>
 
-</div>
+<!-- STICKY CALL BUTTON -->
+<a href="tel:7892554609" class="call-btn">📞 Call Now</a>
 
 <!-- EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
@@ -225,18 +246,26 @@ src="https://www.google.com/maps?q=Boopasandra+Bangalore&output=embed">
 document.getElementById("contact-form").addEventListener("submit", function(e) {
  e.preventDefault();
 
+ // MOBILE VALIDATION
  let mobile = document.querySelector("input[name='mobile']").value;
-
  if(!/^[0-9]{10}$/.test(mobile)){
-    alert("❌ Please enter a valid 10-digit mobile number");
-    return;
+   alert("Enter valid mobile number");
+   return;
+ }
+
+ // RECAPTCHA VALIDATION
+ let captcha = grecaptcha.getResponse();
+ if(captcha.length === 0){
+   alert("Please verify captcha");
+   return;
  }
 
  emailjs.sendForm("service_qchh8fa","template_scxt23s",this);
  emailjs.sendForm("service_qchh8fa","auto_reply_template",this);
 
- alert("✅ Message sent successfully!");
+ alert("Message sent successfully!");
  this.reset();
+ grecaptcha.reset();
 });
 </script>
 
