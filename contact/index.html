@@ -7,190 +7,122 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/contact/" />
-  
-<!-- ✅ FAVICON (FIXED POSITION ✅) -->
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/contact/"/>
 
-<!-- ✅ SEO META -->
-<meta name="description" content="Contact RBS Network Solutions in Bangalore for CCTV installation, networking, telecom and IT services. Call or send message for quick support.">
+<!-- FAVICON -->
+<link rel="icon" href="/favicon.ico">
 
-<meta name="keywords" content="Contact CCTV Bangalore, network solutions contact Bangalore, IT services Bangalore contact">
+<meta name="description" content="Contact RBS Network Solutions in Bangalore for CCTV installation, networking, telecom and IT services.">
 
-<meta name="author" content="RBS Network Solutions">
-
-<!-- ✅ OPEN GRAPH -->
-<meta property="og:title" content="Contact RBS Network Solutions Bangalore">
-<meta property="og:description" content="Get in touch for CCTV, networking and telecom services in Bangalore.">
-<meta property="og:type" content="website">
-
-<!-- ✅ SCHEMA -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LocalBusiness",
- "name": "RBS Network Solutions",
- "url": "https://www.rbsnetworksolutionsblr.com",
- "telephone": "+91-7892554609",
- "address": {
-   "@type": "PostalAddress",
-   "streetAddress": "Shaheena Building, Boopasandra",
-   "addressLocality": "Bangalore",
-   "postalCode": "560094",
-   "addressCountry": "India"
- }
-}
-</script>
-
+<!-- STYLES -->
 <style>
 
-/* ===== GENERAL ===== */
+/* GENERAL */
 body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: #f5f7fa;
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:#f2f2f2;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
-  background-color: #ffffff;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  background:#e5e5e5;
+  padding:10px 30px;
 }
 
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
+.header-inner{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
 }
 
-/* LOGO */
-.logo-section {
-  display: flex;
-  align-items: center;
+nav a{
+ margin:0 10px;
+ text-decoration:none;
+ color:#000;
+ font-size:13px;
 }
 
-.logo-img {
-  height: 40px;
-  margin-right: 10px;
+nav a.active{
+ font-weight:bold;
 }
 
-.logo-text {
-  color: #00AEEF;
-  font-weight: bold;
-  font-size: 20px;
+/* CONTACT SECTION */
+.contact-wrapper {
+  text-align:center;
+  padding:40px 20px;
 }
 
-/* NAVBAR */
-nav {
-  display: flex;
-  gap: 12px;
+.contact-wrapper h1{
+  margin-bottom:10px;
 }
 
-nav a {
-  background: #00AEEF;
-  color: white;
-  text-decoration: none;
-  padding: 10px 18px;
-  border-radius: 30px;
-  font-weight: 600;
-  font-size: 14px;
-  transition: 0.3s;
+/* GRID */
+.contact-container{
+  display:flex;
+  justify-content:center;
+  gap:50px;
+  margin-top:30px;
+  flex-wrap:wrap;
 }
 
-nav a:hover {
-  background: #007bb5;
-  transform: translateY(-2px);
+/* LEFT FORM */
+.contact-form{
+  width:400px;
+  text-align:left;
 }
 
-nav a.active {
-  outline: 2px solid #005f8f;
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin-bottom:12px;
+  border:none;
+  background:#cfd8e3;
 }
 
-/* ===== CONTACT SECTION ===== */
-.contact-page {
- display: flex;
- flex-wrap: wrap;
- gap: 30px;
- padding: 50px 20px;
- max-width: 1000px;
- margin: auto;
+.contact-form button{
+  width:100%;
+  padding:14px;
+  border:none;
+  background:#111;
+  color:#fff;
+  border-radius:25px;
+  cursor:pointer;
 }
 
-/* LEFT */
-.contact-info {
- flex: 1;
- min-width: 280px;
+/* RIGHT INFO */
+.contact-info{
+  width:400px;
+  text-align:left;
 }
 
-.contact-info h1 {
- color: #00AEEF;
+.whatsapp-btn{
+  display:inline-block;
+  background:#25D366;
+  color:#fff;
+  padding:10px 18px;
+  border-radius:25px;
+  text-decoration:none;
+  margin:10px 0;
 }
 
-.contact-info p {
- line-height: 1.6;
+/* MAP */
+.map-section{
+ margin-top:40px;
 }
 
-/* RIGHT */
-.contact-form {
- flex: 1;
- min-width: 280px;
- background: #ffffff;
- padding: 25px;
- border-radius: 12px;
- box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-}
-
-/* FORM */
-form input, form textarea {
- width: 100%;
- padding: 12px;
- margin: 8px 0;
- border: 1px solid #ccc;
- border-radius: 6px;
-}
-
-form button {
- width: 100%;
- background-color: #00AEEF;
- color: white;
- padding: 12px;
- border: none;
- border-radius: 6px;
- cursor: pointer;
- font-weight: 600;
-}
-
-form button:hover {
- background-color: #007bb5;
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 15px;
-  background: #0a2540;
-  color: #ccc;
+iframe{
+ width:100%;
+ height:400px;
+ border:0;
 }
 
 /* MOBILE */
-@media (max-width: 768px) {
-  .header-inner {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  nav {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contact-page {
-    flex-direction: column;
+@media(max-width:768px){
+  .contact-container{
+    flex-direction:column;
+    align-items:center;
   }
 }
 
@@ -204,61 +136,85 @@ footer {
 <header>
   <div class="header-inner">
 
-        <div class="logo-section">
-            <img src="/rbs_images/rbs_logo.jpg" class="logo-img" alt="RBS Network Solutions logo">
-            <span class="logo-text">RBS Network Solutions</span>
-        </div>
+    <div>
+      <img src="/rbs_images/rbs_logo.jpg" height="40">
+    </div>
 
-        <nav>
-           <a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
-          <a href="https://www.rbsnetworksolutionsblr.com/about/">About</a>
-          <a href="https://www.rbsnetworksolutionsblr.com/services/">Services</a>
-          <a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-        </nav>
+    <nav>
+      <a href="/">HOME</a>
+      <a href="/about/">ABOUT US</a>
+      <a href="/services/">SERVICES</a>
+      <a href="#">PROJECTS</a>
+      <a href="#">PHOTO GALLERY</a>
+      <a href="#">BUSINESS PARTNERS</a>
+      <a class="active" href="/contact/">CONTACT</a>
+    </nav>
 
   </div>
 </header>
 
 <!-- CONTACT -->
-<section class="contact-page">
+<section class="contact-wrapper">
 
- <div class="contact-info">
-   <h1>Contact Us</h1>
+<h1>Contact Us</h1>
 
-   <p><b>Address:</b></p>
-   <p>
-   RBS NETWORK SOLUTIONS<br>
-   NO S1 GF, Shaheena Building<br>
-   Kalpana Chawla Road, Boopasandra<br>
-   Bangalore - 560094
-   </p>
+<div class="contact-container">
 
-   <p><b>WhatsApp:</b><br> 7892554609, 9353961667</p>
+<!-- FORM -->
+<div class="contact-form">
 
-   <p><b>Email:</b><br> 
-     <a href="mailto:rbsnetworks2025@gmail.com">
-       rbsnetworks2025@gmail.com
-     </a>
-   </p>
- </div>
+<p>Drop us a Query</p>
 
- <div class="contact-form">
-   <form id="contact-form">
-     <input type="text" name="from_name" placeholder="Your Name" required>
-     <input type="email" name="from_email" placeholder="Your Email" required>
-     <input type="tel" name="mobile" placeholder="Mobile Number (10 digits)" pattern="[0-9]{10}" required>
-     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-     <button type="submit">Send Message</button>
-   </form>
- </div>
+<form id="contact-form">
+
+<input type="text" name="from_name" placeholder="Name" required>
+<input type="email" name="from_email" placeholder="Email" required>
+<input type="tel" name="mobile" placeholder="Mobile Number" pattern="[0-9]{10}" required>
+
+<textarea name="message" placeholder="Message" rows="5" required></textarea>
+
+<button type="submit">SEND</button>
+
+</form>
+
+</div>
+
+<!-- INFO -->
+<div class="contact-info">
+
+<p>We love our customers, so feel free to visit during normal business hours.</p>
+
+<a class="whatsapp-btn" href="https://wa.me/917892554609" target="_blank">WhatsApp</a>
+
+<h3>R B S NETWORK SOLUTIONS</h3>
+
+<p>
+Shaheena Building, Boopasandra<br>
+Bangalore - 560094
+</p>
+
+<p>📞 7892554609</p>
+<p>✉ rbsnetworks2025@gmail.com</p>
+
+<h4>Hours</h4>
+<p>Open today 09:30 am – 06:00 pm</p>
+
+</div>
+
+</div>
 
 </section>
 
-<footer>
- <p>© 2025 RBS Network Solutions</p>
-</footer>
+<!-- MAP -->
+<div class="map-section">
 
-<!-- ✅ EMAILJS (UNCHANGED) -->
+<iframe
+src="https://www.google.com/maps?q=Boopasandra+Bangalore&output=embed">
+</iframe>
+
+</div>
+
+<!-- EMAILJS -->
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <script>
