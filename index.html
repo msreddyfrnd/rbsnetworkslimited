@@ -6,32 +6,21 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="google-site-verification" content="googlef1c5627b26157128">
 
 <link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/" />
 <meta name="robots" content="index, follow">
 
-<!-- ✅ Performance FIX -->
+<!-- PERFORMANCE -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- ✅ COMPLETE FAVICON FIX (Google + Browser + SEO) -->
-
-<link rel="icon" href="https://www.rbsnetworksolutionsblr.com/favicon.ico" type="image/x-icon">
-
-<link rel="icon" type="image/png" sizes="32x32"
-href="https://www.rbsnetworksolutionsblr.com/favicon-32x32.png">
-
-<link rel="icon" type="image/png" sizes="16x16"
-href="https://www.rbsnetworksolutionsblr.com/favicon-16x16.png">
-
-<link rel="apple-touch-icon"
-href="https://www.rbsnetworksolutionsblr.com/apple-touch-icon.png">
-
-<link rel="manifest"
-href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
-
+<!-- FAVICON -->
+<link rel="icon" href="https://www.rbsnetworksolutionsblr.com/favicon.ico">
+<link rel="icon" sizes="32x32" href="https://www.rbsnetworksolutionsblr.com/favicon-32x32.png">
+<link rel="icon" sizes="16x16" href="https://www.rbsnetworksolutionsblr.com/favicon-16x16.png">
+<link rel="apple-touch-icon" href="https://www.rbsnetworksolutionsblr.com/apple-touch-icon.png">
+<link rel="manifest" href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
 <meta name="theme-color" content="#00AEEF">
 
 <!-- SEO -->
@@ -47,7 +36,7 @@ href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<!-- ✅ Local Business Schema -->
+<!-- Schema (UNCHANGED) -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -65,7 +54,6 @@ href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
 }
 </script>
 
-<!-- ✅ FAQ Schema -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
@@ -76,7 +64,7 @@ href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
      "name": "What is the cost of CCTV installation in Bangalore?",
      "acceptedAnswer": {
        "@type": "Answer",
-       "text": "CCTV installation cost depends on camera type and area size. Contact RBS Network Solutions for best pricing."
+       "text": "CCTV installation cost depends on camera type and area size."
      }
    },
    {
@@ -84,7 +72,7 @@ href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
      "name": "Do you provide networking services?",
      "acceptedAnswer": {
        "@type": "Answer",
-       "text": "Yes, we provide LAN networking, fiber setup, and IT infrastructure services across Bangalore."
+       "text": "Yes, we provide LAN networking, fiber setup, and IT infrastructure services."
      }
    }
  ]
@@ -92,22 +80,21 @@ href="https://www.rbsnetworksolutionsblr.com/site.webmanifest">
 </script>
 
 <style>
-/* ❌ DESIGN NOT CHANGED */
 * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family:'Poppins', sans-serif;
     background:#f8fbff;
     color:#222;
 }
 
+/* HEADER */
 header {
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(255,255,255,0.9);
-    backdrop-filter: blur(10px);
-    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .container {
@@ -131,90 +118,150 @@ header {
 
 .logo-img { height:42px; }
 
-.logo-text { font-weight:700; color:#00AEEF; font-size:22px; }
+.logo-text {
+    font-weight:700;
+    color:#00AEEF;
+    font-size:22px;
+}
 
-nav { display:flex; gap:10px; }
+/* NAV */
+nav {
+    display:flex;
+    gap:10px;
+}
 
 nav a {
     text-decoration:none;
-    padding:10px 18px;
-    border-radius:30px;
+    padding:8px 16px;
+    border-radius:20px;
     background:#00AEEF;
     color:#fff;
+    font-size:14px;
+    transition:0.3s;
 }
 
-.menu-toggle { display:none; }
+nav a:hover {
+    background:#007acb;
+}
 
+/* HERO */
 .hero {
-    background:linear-gradient(rgba(10,37,64,0.8), rgba(0,123,255,0.8)),
+    background:linear-gradient(rgba(10,37,64,0.75), rgba(0,123,255,0.75)),
     url('https://images.unsplash.com/photo-1526378722484-cc5c5106a86e');
     background-size:cover;
-    color:#fff;
+    background-position:center;
     text-align:center;
-    padding:130px 20px;
+    color:#fff;
+    padding:120px 20px;
 }
 
-.hero h1 { font-size:48px; }
+.hero h1 {
+    font-size:42px;
+    margin-bottom:15px;
+}
 
+.hero p {
+    font-size:18px;
+}
+
+/* SECTIONS */
 .section {
     padding:70px 20px;
     text-align:center;
 }
 
-/* ✅ added small spacing improvement only */
-.section p { max-width:800px; margin:auto; line-height:1.6; }
+.section h2 {
+    margin-bottom:20px;
+    font-size:28px;
+}
 
+.section p {
+    max-width:750px;
+    margin:auto;
+    line-height:1.7;
+    color:#555;
+}
+
+/* CARDS */
 .grid {
     display:grid;
-    gap:20px;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    margin-top:30px;
 }
 
 .card {
-    background:white;
-    padding:25px;
+    background:#fff;
+    padding:30px;
     border-radius:12px;
-    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    box-shadow:0 6px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+    font-weight:600;
 }
 
+.card:hover {
+    transform:translateY(-5px);
+}
+
+/* STATS */
 .stats {
     display:flex;
     justify-content:center;
-    gap:25px;
+    gap:20px;
     flex-wrap:wrap;
+    margin-top:25px;
 }
 
 .stat-box {
-    background:white;
-    padding:30px;
+    background:#fff;
+    padding:25px;
     border-radius:12px;
-    width:180px;
+    width:160px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
 }
 
+/* CTA */
 .cta {
     background:#0a2540;
     color:#fff;
-    padding:60px 20px;
+    text-align:center;
+    padding:50px 20px;
 }
 
+.cta h2 { margin-bottom:10px; }
+
+/* FOOTER */
 footer {
     background:#041220;
     color:white;
     text-align:center;
-    padding:25px;
+    padding:20px;
+    font-size:14px;
 }
 
+/* WHATSAPP */
 .whatsapp {
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25D366;
     color:white;
-    padding:14px 18px;
+    padding:12px 18px;
     border-radius:50px;
     text-decoration:none;
+    font-weight:600;
 }
 
+/* MOBILE */
+@media(max-width:768px){
+    nav {
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero h1 { font-size:28px; }
+    .hero p { font-size:16px; }
+}
 </style>
 
 </head>
@@ -229,24 +276,22 @@ footer {
 <span class="logo-text">RBS Network Solutions</span>
 </div>
 
-<nav id="navbar">
-<a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
-<a href="https://www.rbsnetworksolutionsblr.com/about/">About Us</a>
-<a href="https://www.rbsnetworksolutionsblr.com/services/">Services</a>
-<a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-<a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
+<nav>
+<a href="/">Home</a>
+<a href="/about/">About Us</a>
+<a href="/services/">Services</a>
+<a href="/clients/">Clients</a>
+<a href="/contact/">Contact</a>
 </nav>
 
 </div>
 </header>
 
-<!-- HERO -->
 <section class="hero">
 <h1>CCTV Installation and Network Solutions in Bangalore</h1>
 <p>Professional IT Infrastructure, Security & Telecom Services in Bangalore</p>
 </section>
 
-<!-- ✅ CONTENT BOOST -->
 <section class="section">
 <h2>CCTV - Network - FTTH Systems in Bangalore</h2>
 <p>
@@ -255,33 +300,28 @@ We ensure secure, reliable and scalable systems for homes and businesses.
 </p>
 </section>
 
-<!-- SERVICES -->
 <section class="section">
 <h2>Our Services</h2>
 <div class="grid">
-<a href="https://www.rbsnetworksolutionsblr.com/cloud/">
-<div class="card">📹 CCTV Installation</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/networking/">
-<div class="card">🌐 LAN Networking</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/security/">
-<div class="card">📡 Telecom Solutions</div>
-</a>
+
+<a href="/cloud/"><div class="card">📹 CCTV Installation</div></a>
+<a href="/networking/"><div class="card">🌐 LAN Networking</div></a>
+<a href="/security/"><div class="card">📡 Telecom Solutions</div></a>
+
 </div>
 </section>
 
-<!-- STATS -->
 <section class="section">
 <h2>Why Choose Us</h2>
+
 <div class="stats">
 <div class="stat-box"><h2>150+</h2><p>Projects</p></div>
 <div class="stat-box"><h2>80+</h2><p>Clients</p></div>
 <div class="stat-box"><h2>15+</h2><p>Years Experience</p></div>
 </div>
+
 </section>
 
-<!-- CTA -->
 <section class="cta">
 <h2>Need CCTV Installation in Bangalore?</h2>
 <p>Call Now: +91 7892554609, 9353961667</p>
