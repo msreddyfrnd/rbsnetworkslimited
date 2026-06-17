@@ -7,15 +7,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<!-- SEO -->
 <meta name="description" content="RBS Network Solutions provides professional CCTV installation in Bangalore including Hebbal, Yelahanka, RT Nagar. Affordable and reliable security solutions.">
+<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/about/">
+<meta name="author" content="RBS Network Solutions">
 
-<link rel="canonical" href="https://www.rbsnetworksolutionsblr.com/about/" />
+<!-- Open Graph -->
+<meta property="og:title" content="About RBS Network Solutions">
+<meta property="og:description" content="CCTV installation & networking services in Bangalore">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.rbsnetworksolutionsblr.com/about/">
+
 <link rel="icon" href="/favicon.ico">
 
+<!-- Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
@@ -30,6 +40,7 @@ header {
     background:#fff;
     padding:15px 40px;
     box-shadow:0 3px 10px rgba(0,0,0,0.07);
+    flex-wrap:wrap;
 }
 
 .logo-section {
@@ -37,7 +48,10 @@ header {
     align-items:center;
 }
 
-.logo-img { width:50px; margin-right:10px; }
+.logo-img { 
+    width:50px; 
+    margin-right:10px; 
+}
 
 .logo-text {
     color:#00AEEF;
@@ -48,6 +62,7 @@ header {
 nav {
     display:flex;
     gap:12px;
+    flex-wrap:wrap;
 }
 
 nav a {
@@ -58,12 +73,14 @@ nav a {
     color:#fff;
     font-size:14px;
 }
+nav a:hover { background:#007bb5; }
 
 /* HERO */
 .about-hero {
     background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
     url('https://images.unsplash.com/photo-1558494949-ef010cbdcc31');
     background-size:cover;
+    background-position:center;
     color:white;
     text-align:center;
     padding:100px 20px;
@@ -84,6 +101,7 @@ nav a {
 
 .about-block h2 { color:#00AEEF; }
 
+/* GRID */
 .grid {
     display:grid;
     gap:20px;
@@ -91,26 +109,33 @@ nav a {
 }
 
 .card {
+    display:block;
     background:#eef7fc;
     padding:20px;
     border-radius:10px;
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+    transition:0.3s;
 }
 
-/* FORM */
-form input, form textarea {
+.card:hover {
+    background:#d7effa;
+    transform:translateY(-3px);
+}
+
+/* LIST */
+ul {
+    padding-left:20px;
+    line-height:1.8;
+}
+
+/* MAP */
+.map {
     width:100%;
-    padding:10px;
-    margin:8px 0;
-    border-radius:5px;
-    border:1px solid #ccc;
-}
-
-form button {
-    background:#00AEEF;
-    color:#fff;
-    padding:10px 20px;
-    border:none;
-    border-radius:20px;
+    height:300px;
+    border-radius:10px;
+    border:0;
 }
 
 /* CTA */
@@ -120,11 +145,21 @@ form button {
     text-align:center;
     padding:50px 20px;
 }
+.cta a {
+    display:inline-block;
+    margin-top:10px;
+    background:#00AEEF;
+    padding:12px 25px;
+    border-radius:30px;
+    color:white;
+    text-decoration:none;
+}
+.cta a:hover { background:#007bb5; }
 
-/* WHATSAPP */
+/* FLOAT BUTTONS */
 .whatsapp {
     position:fixed;
-    bottom:80px;
+    bottom:90px;
     right:20px;
     background:#25D366;
     color:#fff;
@@ -132,34 +167,33 @@ form button {
     border-radius:50%;
     font-size:20px;
     text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* CALL BUTTON */
 .call-btn {
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#007bff;
-    color:#fff;
-    padding:14px;
-    border-radius:50%;
+    position:fixed;    border-radius:50%;
     font-size:20px;
     text-decoration:none;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
 }
 
-/* MAP */
-.map {
-    width:100%;
-    height:300px;
-    border-radius:10px;
-}
-
+/* FOOTER */
 footer {
     background:#111;
     color:white;
     text-align:center;
     padding:15px;
 }
+
+/* MOBILE */
+@media(max-width:768px){
+    header {
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
+    }
+}
+
 </style>
 
 </head>
@@ -168,24 +202,26 @@ footer {
 
 <header>
 <div class="logo-section">
-<img src="/rbs_images/rbs_logo.jpg" class="logo-img">
+_images/rbs_logo.jpg" class="logo-img" alt="RBS Network Solutions Logo">
 <span class="logo-text">RBS Network Solutions</span>
 </div>
 
 <nav>
-<a href="https://www.rbsnetworksolutionsblr.com/">Home</a>
-<a href="https://www.rbsnetworksolutionsblr.com/about/">About Us</a>
-<a href="https://www.rbsnetworksolutionsblr.com/services/">Services</a>
-<a href="https://www.rbsnetworksolutionsblr.com/clients/">Clients</a>
-<a href="https://www.rbsnetworksolutionsblr.com/contact/">Contact</a>
+/
+/about/
+/services/
+/clients/Clients</a>
+/contact/
 </nav>
 </header>
 
+<!-- HERO -->
 <section class="about-hero">
 <h1>CCTV Installation in Bangalore</h1>
 <p>Reliable CCTV, Networking & IT Infrastructure Experts</p>
 </section>
 
+<!-- CONTENT -->
 <section class="about-company">
 <div class="container">
 
@@ -197,15 +233,9 @@ footer {
 <div class="about-block">
 <h2>Our Services</h2>
 <div class="grid">
-<a href="https://www.rbsnetworksolutionsblr.com/cloud/">
-<div class="card">📹 CCTV Installation</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/networking/">
-<div class="card">🌐 LAN Networking</div>
-</a>
-<a href="https://www.rbsnetworksolutionsblr.com/security/">
-<div class="card">📡 Telecom Solutions</div>
-</a>
+services/" class="card">📹 CCTV Installation</a>
+/services/🌐 LAN Networking</a>
+/services/ class="card">📡 Telecom Solutions</a>
 </div>
 </div>
 
@@ -218,51 +248,43 @@ footer {
 </ul>
 </div>
 
-<!-- ✅ GOOGLE MAP -->
+<!-- ✅ MAP -->
 <div class="about-block">
 <h2>Our Location</h2>
-
-<iframe class="map"
-src="https://maps.google.com/maps?q=Bangalore&t=&z=13&ie=UTF8&iwloc=&output=embed">
+https://www.google.com/maps?q=Bangalore&output=embed
 </iframe>
-
 </div>
 
 <div class="about-block">
 <h2>FAQ</h2>
-<p><strong>Do you provide CCTV installation near me?</strong><br>Yes, we serve all areas in Bangalore.</p>
-<p><strong>Do you offer maintenance?</strong><br>Yes, AMC support available.</p>
+
+<p><strong>Do you provide CCTV installation near me?</strong><br>
+Yes, we serve all areas in Bangalore.</p>
+
+<p><strong>Do you offer maintenance?</strong><br>
+Yes, AMC support available.</p>
+
 </div>
 
 </div>
 </section>
 
+<!-- CTA -->
 <section class="cta">
 <h2>Need CCTV Installation in Bangalore?</h2>
 <p>Call or WhatsApp us now for quick service</p>
-<a href="tel:+917892554609" style="color:#fff;">Call Now</a>
+tel:+917892554609📞 Call Now</a>
 </section>
 
-<!-- ✅ FLOAT BUTTONS -->
-<a href="https://wa.me/917892554609" class="whatsapp">💬</a>
-<a href="tel:+917892554609" class="call-btn">📞</a>
+<!-- FLOAT BUTTONS -->
+https://wa.me/917892554609?text=Hello%20RBS%20Network%20Solutions,%20I%20need%20more%20details💬</a>
 
+:+917892554609" class="call-btn" aria-label="Call Now">📞</a>
+
+<!-- FOOTER -->
 <footer>
 © 2025 RBS Network Solutions
 </footer>
-
-<script>
-function sendWhatsApp(){
-  let name=document.getElementById("name").value;
-  let phone=document.getElementById("phone").value;
-  let msg=document.getElementById("msg").value;
-
-  let url="https://wa.me/917892554609?text="
-  +"Name: "+name+"%0aPhone: "+phone+"%0aRequirement: "+msg;
-
-  window.open(url,'_blank');
-}
-</script>
 
 </body>
 </html>
